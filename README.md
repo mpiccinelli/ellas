@@ -12,16 +12,23 @@ O projeto ELLAS (Equality in Leadership for Latin American STEM) visa promover a
 ├── ELLAS
 │   ├── Data
 │       └── dictionary.xlsx
+│       └── survey.csv
 │   ├── Images
 │   └── Source
+│       └── 1 - Limpeza e tratamento.ipynb
+│       └── 2 - Análise Exploratória.ipynb
+│   └── README.md
 ```
 
 **Descrição dos Arquivos:**
 
 - `ELLAS/Data`: Contém os dados utilizados na análise.
-   - `/dictionary.xlsx`: Dicionário de dados para o arquivo de origem.
+  - `/dictionary.xlsx`: Dicionário de dados para o arquivo de origem.
+  - `/survey.csv`: Arquivo de dados da pesquisa ELLAS no Brasil.
 - `ELLAS/Images`: Contém imagens geradas durante a análise.
 - `ELLAS/Source`: Contém os códigos e scripts utilizados na análise.
+  - `1 - Limpeza e tratamento.ipynb`: Notebook com o código para limpeza e tratamento dos dados.
+  - `2 - Análise Exploratória.ipynb`: Notebook com o código para a análise exploratória dos dados.
 - `ELLAS/README.md`: Arquivo com a descrição do projeto e da estrutura de arquivos.
 
 **Etapas da Análise:**
