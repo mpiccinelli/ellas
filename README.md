@@ -1,0 +1,57 @@
+# Análise de dados da Pesquisa ELLAS no Brasil.
+
+Este repositório contém os arquivos e códigos utilizados na análise dos dados da pesquisa ELLAS no Brasil.
+
+**Descrição do Projeto:**
+
+O projeto ELLAS (Equality in Leadership for Latin American STEM) visa promover a igualdade de gênero em áreas de Ciência, Tecnologia, Engenharia e Matemática (STEM) na América Latina. Este estudo foca nos dados da pesquisa ELLAS no Brasil. A partir da análise dos dados, buscamos contribuir para a formulação de estratégias e políticas que promovam a igualdade de gênero e a inclusão de mulheres em áreas de STEM no Brasil.
+
+**Estrutura de Arquivos:**
+
+```
+├── ELLAS
+│   ├── Data
+│       └── dictionary.xlsx
+│   ├── Images
+│   └── Source
+```
+
+**Descrição dos Arquivos:**
+
+- `ELLAS/Data`: Contém os dados utilizados na análise.
+   - `/dictionary.xlsx`: Dicionário de dados para o arquivo de origem.
+- `ELLAS/Images`: Contém imagens geradas durante a análise.
+- `ELLAS/Source`: Contém os códigos e scripts utilizados na análise.
+- `ELLAS/README.md`: Arquivo com a descrição do projeto e da estrutura de arquivos.
+
+**Etapas da Análise:**
+
+
+**Resultados:**
+
+
+**Conclusões:**
+
+
+**Contribuições:**
+
+
+**Autores:**
+
+- Marlos Vinicius S. Piccinelli
+  - Mestrando em Computação Aplicada, PPGCA - UTFPR
+  - marlosvinicius.info@gmail.com
+
+- Nádia P. Kozievitch
+  - Professora, Doutora, UTFPR
+  - nadiap@utfpr.edu.br
+
+- Rita Cristina Galarraga Berardi
+  - Professora, Doutora, UTFPR 
+  - ritaberardi@utfpr.edu.br
+
+**Referências:**
+
+- Maciel, C., Guzman, I., Berardi, R., Caballero, B. B., Rodriguez, N., Frigo, L., Salgado, L., Jimenez, E., Bim, S. A. and Tapia, P. C. (2023) “Open Data Platform to Promote Gender Equality Policies in STEM”, In Proceedings of the Western Decision Sciences Institute (WDSI). April 2023. Portland Oregon, EUA.
+
+- Berardi, R., Auceli, P., Maciel, C., Davila, G., Guzman, I., & Mendes, L. (2023). ELLAS: Uma plataforma de dados abertos com foco em lideranças femininas em STEM no contexto da América Latina. In Anais do XVII Women in Information Technology, (pp. 124-135). Porto Alegre: SBC. doi:10.5753/wit.2023.230764
