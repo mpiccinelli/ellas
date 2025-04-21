@@ -1,10 +1,10 @@
-# Análise de dados da Pesquisa ELLAS no Brasil.
+# Análise de dados da Pesquisa ELLAS.
 
-Este repositório contém os arquivos e códigos utilizados na análise dos dados da pesquisa ELLAS no Brasil.
+Este repositório contém os arquivos e códigos utilizados na análise dos dados da pesquisa ELLAS.
 
 **Descrição do Projeto:**
 
-O projeto ELLAS (Equality in Leadership for Latin American STEM) visa promover a igualdade de gênero em áreas de Ciência, Tecnologia, Engenharia e Matemática (STEM) na América Latina. Este estudo foca nos dados da pesquisa ELLAS no Brasil. A partir da análise dos dados, buscamos contribuir para a formulação de estratégias e políticas que promovam a igualdade de gênero e a inclusão de mulheres em áreas de STEM no Brasil.
+O projeto ELLAS (Equality in Leadership for Latin American STEM) visa promover a igualdade de gênero em áreas de Ciência, Tecnologia, Engenharia e Matemática (STEM) na América Latina. Este estudo foca nos dados da pesquisa ELLAS. A partir da análise dos dados, buscamos contribuir para a formulação de estratégias e políticas que promovam a igualdade de gênero e a inclusão de mulheres em áreas de STEM.
 
 **Estrutura de Arquivos:**
 
@@ -24,7 +24,7 @@ O projeto ELLAS (Equality in Leadership for Latin American STEM) visa promover a
 
 - `ELLAS/Data`: Contém os dados utilizados na análise.
   - `/dictionary.xlsx`: Dicionário de dados para o arquivo de origem.
-  - `/survey.csv`: Arquivo de dados da pesquisa ELLAS no Brasil.
+  - `/survey.csv`: Arquivo de dados da pesquisa ELLAS.
 - `ELLAS/Images`: Contém imagens geradas durante a análise.
 - `ELLAS/Source`: Contém os códigos e scripts utilizados na análise.
   - `1 - Limpeza e tratamento.ipynb`: Notebook com o código para limpeza e tratamento dos dados.
