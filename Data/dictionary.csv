@@ -10,7 +10,8 @@ ID;Variable;Question;Details;Type;Possible_Answers;Observations
 4=1945-1964";
 6;D2_sex;Sexo;Género;Dicotómica;"1  Mujer
 0 Hombre";
-7;D3_gender;Género con el cual se identifica;Género;Texto ;Typed by the respondent. ;
+7;D3_gender;Género con el cual se identifica;;;;
+7;D3_gender_classification;Género con el cual se identifica;;;;
 8;D4_ethnic_group;¿Se identifica con alguno de estos grupos étnicos? ;Etnia;Texto ;;
 9;D4_ethnic_group_bol;¿Se identifica con alguno de estos grupos étnicos? ;Etnia;Texto ;"blanco
 mestizo

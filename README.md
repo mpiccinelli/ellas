@@ -33,6 +33,11 @@ Os dados foram coletados por meio de questionários online aplicados no Brasil, 
 ```
 ├── ELLAS
 │   ├── Data
+│       └── Ethnic
+│           └── harmonization_ethnic_data.csv
+│       └── Gender
+│           └── normalization_gender_base.csv
+│           └── normalization_gender_data.csv
 │       └── dataset.xlsx
 │       └── dictionary.xlsx
 │       └── harmonization_ethnic_data.csv
@@ -50,9 +55,13 @@ Os dados foram coletados por meio de questionários online aplicados no Brasil, 
 **Descrição dos Arquivos:**
 
 - `ELLAS/Data`: Contém os dados utilizados na análise.
+  - `Ethnic`: Contém os dados usados para harmonização étnica.
+    - `harmonization_ethnic_data.csv`: Dados de harmonização étnica.
+  - `Gender`: Contém os dados usados para normalização dos gêneros.
+    - `normalization_gender_base.csv`: Dados base para normalização de gênero.
+    - `normalization_gender_data.csv`: Dados de normalização de gênero.
   - `/dataset.xlsx`: Conjunto de dados da Survey ELLAS.
   - `/dictionary.xlsx`: Dicionário de dados, com a descrição das variáveis e seus significados.
-  - `harmonization_ethnic_data.csv`: Dados de harmonização étnica.
   - `data_cleaned.csv`: Conjunto de dados limpo e tratado, pronto para análise.
 - `ELLAS/Ontology`: Contém a ontologia utilizada na análise.
   - `Ellas3.1.owl`: Ontologia ELLAS, que descreve as classes e propriedades dos dados.
@@ -82,7 +91,34 @@ Nesta etapa, os dados foram carregados e verificados quanto à presença de valo
 Nesta etapa, foram realizadas análises descritivas e estatísticas dos dados, com o objetivo de identificar padrões, tendências e relações entre as variáveis. Foram gerados gráficos e tabelas para facilitar a visualização dos resultados. A visualização dos gráficos nos permitiu identificar problemas de qualidade ds dados, como colunas não normalizadas nas variáveis de gênero, curso superior, pós graduação, mestrado, doutorado e pós doutorado. Além disso, foram identificados outros problemas, como a presença de valores ausentes e alguns outliers em campos como quantidade de filhos, idade e tempo de experiência.
 
 #### Soluções para os problemas identificados:
-Com base em padrões e definições reconhecidos internacionalmente, adotamos as categorias de gênero e orientação sexual a seguir por estarem fundamentadas em documentos e campanhas oficiais de organismos das Nações Unidas. No relatório *School-related violence and bullying on the basis of Sexual Orientation and Gender Identity or Expression (SOGIE)* (UNESCO, 2018), utiliza-se o conceito SOGIE para englobar orientação sexual, identidade de gênero e expressão de gênero, o que justifica categorias como **Lésbica**, **Gay**, **Bissexual**, **Pansexual**, **Assexual**, **Queer** e **Intersexo** (UNESCO, 2018). No guia *Safe, Seen and Included* (UNESCO, 2016), reforça-se a necessidade de inclusão de identidades de gênero não conformes, sustentando as categorias **Cisgênero**, **Transgênero** e **Não-binário** (UNESCO, 2016). A campanha *UN Free & Equal* do Alto Comissariado das Nações Unidas para os Direitos Humanos destaca a importância de expressões emergentes e aliadas, fundamentando **Outra expressão** e **Prefiro não responder** como opções que respeitam a autodeterminação e o direito à não divulgação (OHCHR, 2018). Por fim, o manual técnico *Bringing it Out in the Open* (UNESCO, 2019) recomenda oferecer alternativa de “Não informado” para registros em branco ou situações em que a autoidentificação não pôde ser capturada (UNESCO, 2019).
+Com base em padrões e definições reconhecidos internacionalmente, adotamos as categorias de gênero e orientação sexual a seguir por estarem fundamentadas em documentos e campanhas oficiais de organismos das Nações Unidas. No relatório *School-related violence and bullying on the basis of Sexual Orientation and Gender Identity or Expression (SOGIE)* (UNESCO, 2018), utiliza-se o conceito SOGIE para englobar orientação sexual, identidade de gênero e expressão de gênero, o que justifica categorias como **Lésbica**, **Gay**, **Bissexual**, **Heterossexual**, **Panssexual**, **Asexsual**, **Queer** e **Interssexual** (UNESCO, 2018). No guia *Safe, Seen and Included* (UNESCO, 2016), reforça-se a necessidade de inclusão de identidades de gênero não conformes, sustentando as categorias **Cisgênero**, **Transgênero** e **Não binario** (UNESCO, 2016). A campanha *UN Free & Equal* do Alto Comissariado das Nações Unidas para os Direitos Humanos destaca a importância de expressões emergentes e aliadas, fundamentando **Outra expressão** e **Prefito não responder** como opções que respeitam a autodeterminação e o direito à não divulgação (OHCHR, 2018). Por fim, o manual técnico *Bringing it Out in the Open* (UNESCO, 2019) recomenda oferecer alternativa de “No informado” para registros em branco ou situações em que a autoidentificação não pôde ser capturada (UNESCO, 2019).
+
+A seguir, apresentamos a classificação das categorias finais segundo os componentes SOGIE (UNESCO, 2018):
+
+**Identificação de gênero**  
+- **Cisgênero**: pessoa cuja identidade de gênero corresponde ao sexo atribuído no nascimento.  
+- **Transgênero**: pessoa cuja identidade de gênero difere do sexo atribuído ao nascer.  
+- **Não binario**: pessoa que não se identifica exclusivamente como hombre ou mujer.  
+- **Interssexual**: pessoa com variações de características sexuais biológicas (sex characteristics) que não se encaixam nas categorias típicas de “masculino” ou “feminino” (UNESCO, 2018).
+
+**Expressão de gênero**  
+- **Queer**: termo-guarda-chuva para expressões e identidades de gênero não normativas, incluindo pessoas em processo de questionamento.  
+- **Gênero fluido**: pessoa cuja expressão de gênero varia ao longo do tempo, desafiando categorias fixas (UNESCO, 2016).
+
+**Orientação sexual**  
+- **Lésbica**: mulher que sente atração afetiva ou sexual por outras mulheres.  
+- **Gay**: homem que sente atração afetiva ou sexual por outros homens.  
+- **Bissexual**: atração afetiva ou sexual por mais de um gênero.  
+- **Panssexual**: atração independentemente de gênero.  
+- **Assexual**: pouca ou nenhuma atração sexual.  
+- **Heterossexual**: atração por pessoas de gênero diferente.  
+- **Demissexual**: atração sexual que ocorre apenas após formação de vínculo afetivo, integrando categorias complementares de orientação (UNESCO, 2019).
+
+**Outros metadatos**  
+- **Prefiro não responder** e **Não informado**: alternativas de não divulgação ou falha de resposta.  
+- **Outra expressão**: identidades emergentes ou não enquadradas nas categorias acima.
+
+Essa divisão segue integralmente os componentes Sexual Orientation, Gender Identity, Gender Expression e Sex Characteristics definidos pela UNESCO para a análise SOGIE (UNESCO, 2018; UNESCO, 2016).
 
 ## Resultados:
 
