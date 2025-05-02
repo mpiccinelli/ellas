@@ -8,11 +8,13 @@
       _Prompt:_
 
       ```
+      Esta planilha contem informações de gênero dos participantes de uma pesquisa no Brasil, Peru e Bolívia. O campo `D3_gender` foi coletado como um campo de texto aberto, gerando diversos valores com erros de digitação, faltando letras, sem acentos, ou com acentos em lugares errados, letras maiúsculas e minúsculas misturadas, entre tantos outros erros que inviabilizam o estudo efetivo dos dados dessa coluna. Precisamos normalizar a coluna para permitir a interpretação correta dos dados e, para isso, o primeiro passo será fazer a correção dos textos digitados errados. Preciso que me ajude com este procedimento. Cada termo precisa ser corrigido individualmente conforme o seu idioma de captação (A coluna `Country` indica o país de origem da pergunta e vamos usar ele como referência de idioma para a correção no idioma de entrada de dados, Se o país dor Brasil o idioma a ser usado na correção deverá ser o Português do Brasil, se for Bolívia ou Pero o idioma será o Espanhol). Nesta etapa não podemos alterar o significado da palavra, nem atribuir termos genéricos para valores faltantes, devemos apenas realizar a correção do texto digitado pelo usuário. A seguir as instruções para que você possa realizar o procedimento de correção: 
+      
       “Execute a **Etapa 1 – Extração e correção ortográfica** da variável `D3_gender` da seguinte forma:
 
-      Abra o arquivo `normalization_gender_base.csv` e armazene ele em um dataframa em seguida, para cada registro:
-      1. Extraia todos os valores **únicos** de `D3_gender`, incluindo `NaN` e strings vazias.
-      2. Para cada valor único, utilize a **coluna** `Country` para inferir o idioma (português ou espanhol) e aplique o **serviço interno de correção ortográfica** (que corrige acentuação, capitalização, erros de digitação e harmoniza português ↔ espanhol).
+      Abra o arquivo `normalization_gender_base.csv` e armazene ele em um dataframe em seguida:
+      1. Extraia todos os valores **únicos** de `D3_gender` e armazene.
+      2. Para cada valor único, utilize a **coluna** `Country` para inferir o idioma (português ou espanhol) e aplique o **serviço interno de correção de texto** (corrigindo acentuação, capitalização, erros de digitação e pontuação conforme seu idioma).
       3. Monte um **DataFrame** secundario com duas colunas:
          - `original_value`: valor bruto extraído de `D3_gender`
          - `corrected_value`: saída do serviço interno de correção

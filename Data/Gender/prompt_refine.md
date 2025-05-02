@@ -2,6 +2,8 @@
 
 Esse histórico documenta as dificuldades — núcleo dos scripts versus serviço interno, problemas de prompts iniciais pouco claros, as decisões de refinamento que levaram a um processo de correção ortográfica transparente e reproduzível.
 
+> **Observação:** Este documento é a documentação da etapa de correção ortográfica (spelling) tal qual foi realizada. Entretanto, nos testes de reprodutibilidade, o modelo não conseguiu reproduzir o mesmo resultado. Para garantir a reprodutibilidade, o modelo precisou ser ajustado para seguir o fluxo de trabalho definido. O resultado final foi satisfatório, e o processo de refinamento do prompt reprodutível esta documentado no arquivo [`Prompt_reproduction.md`](../Gender/Reproduction/Prompt_reproduction.md)
+
 1.  **Identificação do objetivo e primeiros comandos**
 
     - **O que queríamos:** Aplicar uma correção ortográfica na coluna `D3_gender` que corrigisse acentos, capitalização e erros de digitação, levando em conta o idioma indicado em `Country`.
