@@ -11,16 +11,16 @@ ID;Variable;Question;Details;Type;Possible_Answers;Observations
 6;D2_sex;Sexo;Género;Dicotómica;"1  Mujer
 0 Hombre";
 7;D3_gender;Género con el cual se identifica;;;;
-7;D3_gender_classification;Género con el cual se identifica;;;;
-8;D4_ethnic_group;¿Se identifica con alguno de estos grupos étnicos? ;Etnia;Texto ;;
-9;D4_ethnic_group_bol;¿Se identifica con alguno de estos grupos étnicos? ;Etnia;Texto ;"blanco
+8;D3_gender_classification;Género con el cual se identifica;;;;
+9;D4_ethnic_group;¿Se identifica con alguno de estos grupos étnicos? ;Etnia;Texto ;;
+10;D4_ethnic_group_bol;¿Se identifica con alguno de estos grupos étnicos? ;Etnia;Texto ;"blanco
 mestizo
 quechua
 aymara
 amazónico
 amazónico
 negro ";
-10;D4_ethnic_group_per;¿Se identifica con alguno de estos grupos étnicos? ;Etnia;Texto ;"blanco
+11;D4_ethnic_group_per;¿Se identifica con alguno de estos grupos étnicos? ;Etnia;Texto ;"blanco
 mestizo
 quechua
 aymara
@@ -29,18 +29,18 @@ negro
 mulato
 zamba
 oriental u otro ";
-11;D4_ethnic_group_bra;¿Se identifica con alguno de estos grupos étnicos? ;Etnia;Texto ;"blanco
+12;D4_ethnic_group_bra;¿Se identifica con alguno de estos grupos étnicos? ;Etnia;Texto ;"blanco
 negro
 moreno
 indígena
 amarillo ";
-12;D5_state;¿En qué departamento vive?;Domicilio;Texto ;"La Paz
+13;D5_state;¿En qué departamento vive?;Domicilio;Texto ;"La Paz
 Cochabamba
 Santa Cruz";
-13;D5_state_bol;¿En qué departamento vive?;Domicilio;Texto ;"La Paz
+14;D5_state_bol;¿En qué departamento vive?;Domicilio;Texto ;"La Paz
 Cochabamba
 Santa Cruz";
-14;D5_state_per;¿En qué departamento vive?;Domicilio;Texto ;"Lima
+15;D5_state_per;¿En qué departamento vive?;Domicilio;Texto ;"Lima
 Callao
 Amazonas
 Ancash
@@ -66,7 +66,7 @@ Tacna
 Tumbes
 Ucayali
 Otro: Especificar";
-15;D5_state_bra;Lugar de residencia;Domicilio;Texto ;"Acre
+16;D5_state_bra;Lugar de residencia;Domicilio;Texto ;"Acre
 Rondônia
 Amazonas
 Roraima
@@ -92,17 +92,17 @@ São Paulo
 Paraná
 Santa Catarina
 Río Grande do Sul";
-16;D6_county;¿En qué ciudad vive?;Domicilio;Texto ;"Nuestra señora de La Paz
+17;D6_county;¿En qué ciudad vive?;Domicilio;Texto ;"Nuestra señora de La Paz
 El Alto
 Santa Cruz de la Sierra
 Cochabamba Cercado
 OTRO";
-17;D6_county_bol;¿En qué ciudad vive?;Domicilio;Texto ;"Nuestra señora de La Paz
+18;D6_county_bol;¿En qué ciudad vive?;Domicilio;Texto ;"Nuestra señora de La Paz
 El Alto
 Santa Cruz de la Sierra
 Cochabamba Cercado
 OTRO";
-18;D6_county_per;¿En qué Provincia vive?;Domicilio;Texto ;"Abancay
+19;D6_county_per;¿En qué Provincia vive?;Domicilio;Texto ;"Abancay
 Acobamba
 Alto Amazonas
 Andahuaylas
@@ -185,34 +185,34 @@ Ucayali
 Viru
 Yauli
 Zarumilla";
-19;D6_county_bra;Lugar de residencia [otros];Domicilio;Texto;- ;not included in the survey
-20;D7_marital_status;Estado civil;Estado civil;Factor;"1  Single
+20;D6_county_bra;Lugar de residencia [otros];Domicilio;Texto;- ;not included in the survey
+21;D7_marital_status;Estado civil;Estado civil;Factor;"1  Single
 2  Married
 3  Divorced
 4  Widowed";
-21;D8_1_children_0_3;Número de hijos con edades entre [0 a 3 años];Hijos;Texto numérico ;Typed by the respondent. ;
-22;D8_2_children_4_6;Número de hijos con edades entre [4 a 6 años];Hijos;Texto numérico ;Typed by the respondent. ;
-23;D8_3_children_7_11;Número de hijos con edades entre [7 a 11 años];Hijos;Texto numérico ;Typed by the respondent. ;
-24;D8_4_children_12_17;Número de hijos con edades entre [12 a 17 años];Hijos;Texto numérico ;Typed by the respondent. ;
-25;D9_completed_highschool;¿Tiene el nivel de educación secundaria completa?;Educación;Dicotómica;"1  Si 
+22;D8_1_children_0_3;Número de hijos con edades entre [0 a 3 años];Hijos;Texto numérico ;Typed by the respondent. ;
+23;D8_2_children_4_6;Número de hijos con edades entre [4 a 6 años];Hijos;Texto numérico ;Typed by the respondent. ;
+24;D8_3_children_7_11;Número de hijos con edades entre [7 a 11 años];Hijos;Texto numérico ;Typed by the respondent. ;
+25;D8_4_children_12_17;Número de hijos con edades entre [12 a 17 años];Hijos;Texto numérico ;Typed by the respondent. ;
+26;D9_completed_highschool;¿Tiene el nivel de educación secundaria completa?;Educación;Dicotómica;"1  Si 
 0  No";
-26;D9_1_1_attended_college; Nivel de educación (Debe marcar solo los obtenidos y en curso): [Superior universitario];Educación;Dicotómica;"1  Si 
+27;D9_1_1_attended_college; Nivel de educación (Debe marcar solo los obtenidos y en curso): [Superior universitario];Educación;Dicotómica;"1  Si 
 0  No";
-27;D9_1_2_attended_master;Nivel de educación (Debe marcar solo los obtenidos y en curso): [Maestría];Educación;Dicotómica;"1  Si 
+28;D9_1_2_attended_master;Nivel de educación (Debe marcar solo los obtenidos y en curso): [Maestría];Educación;Dicotómica;"1  Si 
 0  No";
-28;D9_1_3_attended_doctorate;Nivel de educación (Debe marcar solo los obtenidos y en curso): [Doctorado];Educación;Dicotómica;"1  Si 
+29;D9_1_3_attended_doctorate;Nivel de educación (Debe marcar solo los obtenidos y en curso): [Doctorado];Educación;Dicotómica;"1  Si 
 0  No";
-29;D9_1_4_attended_postdoc;Nivel de educación (Debe marcar solo los obtenidos y en curso): [Pós Doctorado];Educación;Dicotómica;"1  Si 
+30;D9_1_4_attended_postdoc;Nivel de educación (Debe marcar solo los obtenidos y en curso): [Pós Doctorado];Educación;Dicotómica;"1  Si 
 0  No";
-30;D9_2_1_completed_college;¿Concluido? [Superior ];Educación;Dicotómica;"1  Si 
+31;D9_2_1_completed_college;¿Concluido? [Superior ];Educación;Dicotómica;"1  Si 
 0  No";
-31;D9_2_2_completed_master;¿Concluido? [Maestría];Educación;Dicotómica;"1  Si 
+32;D9_2_2_completed_master;¿Concluido? [Maestría];Educación;Dicotómica;"1  Si 
 0  No";
-32;D9_2_3_completed_doctorate;¿Concluido? [Doctorado];Educación;Dicotómica;"1  Si 
+33;D9_2_3_completed_doctorate;¿Concluido? [Doctorado];Educación;Dicotómica;"1  Si 
 0  No";
-33;D9_2_4_completed_postdoc;¿Concluido? [Pós Doctorado];Educación;Dicotómica;"1  Si 
+34;D9_2_4_completed_postdoc;¿Concluido? [Pós Doctorado];Educación;Dicotómica;"1  Si 
 0  No";
-34;D9_3_1_college_area;Área Superior Universitaria ;Educación;Factor;"1  Ciencias (Ciencias naturales, ciencias sociales, ciencias de la salud y ciencias económicas.),
+35;D9_3_1_college_area;Área Superior Universitaria ;Educación;Factor;"1  Ciencias (Ciencias naturales, ciencias sociales, ciencias de la salud y ciencias económicas.),
 2  Tecnología, Ingeniería de Sistemas o Computación (Por ejemplo, ciencias de la computación, ingeniería de sistemas, ingeniería de software, informática, sistemas de información, licenciatura en Computación, desarrollo de software, ciberseguridad, Big Data, entre otras relacionadas),
 3  Ingenierías relacionadas a la tecnología (Por ejemplo, ingeniería de sistemas, de software, informática, de telecomunicaciones, entre otras relacionadas),
 4  Otras ingenierías (Por ejemplo, ingeniería civil, eléctrica, telecomunicaciones, económica, comercial, industrial, química, entre otras),
@@ -225,8 +225,7 @@ Zarumilla";
 11  Gastronomía,
 12  Hotelería, Turismo,
 13  Otro";
-35;D9_3_1_O_college_area_other;Área Superior Universitaria - Otros;Educación;Texto ;Text typed by the participant;
-36;D9_3_2_master_area;Área Maestría;Educación;Factor;"1  Ciencias (Ciencias naturales, ciencias sociales, ciencias de la salud y ciencias económicas.),
+36;D9_3_1_college_area_desciption;Área Superior Universitaria ;Educación;Factor;"2  Ciencias (Ciencias naturales, ciencias sociales, ciencias de la salud y ciencias económicas.),
 2  Tecnología, Ingeniería de Sistemas o Computación (Por ejemplo, ciencias de la computación, ingeniería de sistemas, ingeniería de software, informática, sistemas de información, licenciatura en Computación, desarrollo de software, ciberseguridad, Big Data, entre otras relacionadas),
 3  Ingenierías relacionadas a la tecnología (Por ejemplo, ingeniería de sistemas, de software, informática, de telecomunicaciones, entre otras relacionadas),
 4  Otras ingenierías (Por ejemplo, ingeniería civil, eléctrica, telecomunicaciones, económica, comercial, industrial, química, entre otras),
@@ -239,8 +238,8 @@ Zarumilla";
 11  Gastronomía,
 12  Hotelería, Turismo,
 13  Otro";
-37;D9_3_2_O_master_area_other;Área Maestría - Otros;Educación;Texto ;Text typed by the participant;
-38;D9_3_3_doctorate_area;Área Doctorado ;Educación;Factor;"1  Ciencias (Ciencias naturales, ciencias sociales, ciencias de la salud y ciencias económicas.),
+37;D9_3_1_O_college_area_other;Área Superior Universitaria - Otros;Educación;Texto ;Text typed by the participant;
+38;D9_3_2_master_area;Área Maestría;Educación;Factor;"1  Ciencias (Ciencias naturales, ciencias sociales, ciencias de la salud y ciencias económicas.),
 2  Tecnología, Ingeniería de Sistemas o Computación (Por ejemplo, ciencias de la computación, ingeniería de sistemas, ingeniería de software, informática, sistemas de información, licenciatura en Computación, desarrollo de software, ciberseguridad, Big Data, entre otras relacionadas),
 3  Ingenierías relacionadas a la tecnología (Por ejemplo, ingeniería de sistemas, de software, informática, de telecomunicaciones, entre otras relacionadas),
 4  Otras ingenierías (Por ejemplo, ingeniería civil, eléctrica, telecomunicaciones, económica, comercial, industrial, química, entre otras),
@@ -253,8 +252,7 @@ Zarumilla";
 11  Gastronomía,
 12  Hotelería, Turismo,
 13  Otro";
-39;D9_3_3_O_doctorate_area_other;Área Doctorado - Otros;Educación;Texto ;Text typed by the participant;
-40;D9_3_4_postdoc_area;Área Pos Doctorado ;Educación;Factor;"1  Ciencias (Ciencias naturales, ciencias sociales, ciencias de la salud y ciencias económicas.),
+39;D9_3_2_master_area_description;Área Maestría;Educación;Factor;"1  Ciencias (Ciencias naturales, ciencias sociales, ciencias de la salud y ciencias económicas.),
 2  Tecnología, Ingeniería de Sistemas o Computación (Por ejemplo, ciencias de la computación, ingeniería de sistemas, ingeniería de software, informática, sistemas de información, licenciatura en Computación, desarrollo de software, ciberseguridad, Big Data, entre otras relacionadas),
 3  Ingenierías relacionadas a la tecnología (Por ejemplo, ingeniería de sistemas, de software, informática, de telecomunicaciones, entre otras relacionadas),
 4  Otras ingenierías (Por ejemplo, ingeniería civil, eléctrica, telecomunicaciones, económica, comercial, industrial, química, entre otras),
@@ -267,14 +265,68 @@ Zarumilla";
 11  Gastronomía,
 12  Hotelería, Turismo,
 13  Otro";
-41;D9_3_4_O_postdoc_area_other;Área Pos Doctorado - Otros;Educación;Texto ;Text typed by the participant;
-42;D10_1_student;Estado profesional [Soy estudiante];Carrera;Dicotómica;"1  Si 
+40;D9_3_2_O_master_area_other;Área Maestría - Otros;Educación;Texto ;Text typed by the participant;
+41;D9_3_3_doctorate_area;Área Doctorado ;Educación;Factor;"1  Ciencias (Ciencias naturales, ciencias sociales, ciencias de la salud y ciencias económicas.),
+2  Tecnología, Ingeniería de Sistemas o Computación (Por ejemplo, ciencias de la computación, ingeniería de sistemas, ingeniería de software, informática, sistemas de información, licenciatura en Computación, desarrollo de software, ciberseguridad, Big Data, entre otras relacionadas),
+3  Ingenierías relacionadas a la tecnología (Por ejemplo, ingeniería de sistemas, de software, informática, de telecomunicaciones, entre otras relacionadas),
+4  Otras ingenierías (Por ejemplo, ingeniería civil, eléctrica, telecomunicaciones, económica, comercial, industrial, química, entre otras),
+5  Humanidades (Filosofía, Teología, Literatura, Artes, Historia, entre otras),
+6  Comunicaciones,
+7  Marketing, Publicidad,
+8  Banca y Seguros,
+9  Comercio Internacional,
+10  Educación,
+11  Gastronomía,
+12  Hotelería, Turismo,
+13  Otro";
+42;D9_3_3_doctorate_area_description;Área Doctorado ;Educación;Factor;"1  Ciencias (Ciencias naturales, ciencias sociales, ciencias de la salud y ciencias económicas.),
+2  Tecnología, Ingeniería de Sistemas o Computación (Por ejemplo, ciencias de la computación, ingeniería de sistemas, ingeniería de software, informática, sistemas de información, licenciatura en Computación, desarrollo de software, ciberseguridad, Big Data, entre otras relacionadas),
+3  Ingenierías relacionadas a la tecnología (Por ejemplo, ingeniería de sistemas, de software, informática, de telecomunicaciones, entre otras relacionadas),
+4  Otras ingenierías (Por ejemplo, ingeniería civil, eléctrica, telecomunicaciones, económica, comercial, industrial, química, entre otras),
+5  Humanidades (Filosofía, Teología, Literatura, Artes, Historia, entre otras),
+6  Comunicaciones,
+7  Marketing, Publicidad,
+8  Banca y Seguros,
+9  Comercio Internacional,
+10  Educación,
+11  Gastronomía,
+12  Hotelería, Turismo,
+13  Otro";
+43;D9_3_3_O_doctorate_area_other;Área Doctorado - Otros;Educación;Texto ;Text typed by the participant;
+44;D9_3_4_postdoc_area;Área Pos Doctorado ;Educación;Factor;"1  Ciencias (Ciencias naturales, ciencias sociales, ciencias de la salud y ciencias económicas.),
+2  Tecnología, Ingeniería de Sistemas o Computación (Por ejemplo, ciencias de la computación, ingeniería de sistemas, ingeniería de software, informática, sistemas de información, licenciatura en Computación, desarrollo de software, ciberseguridad, Big Data, entre otras relacionadas),
+3  Ingenierías relacionadas a la tecnología (Por ejemplo, ingeniería de sistemas, de software, informática, de telecomunicaciones, entre otras relacionadas),
+4  Otras ingenierías (Por ejemplo, ingeniería civil, eléctrica, telecomunicaciones, económica, comercial, industrial, química, entre otras),
+5  Humanidades (Filosofía, Teología, Literatura, Artes, Historia, entre otras),
+6  Comunicaciones,
+7  Marketing, Publicidad,
+8  Banca y Seguros,
+9  Comercio Internacional,
+10  Educación,
+11  Gastronomía,
+12  Hotelería, Turismo,
+13  Otro";
+45;D9_3_4_postdoc_area_description;Área Pos Doctorado ;Educación;Factor;"1  Ciencias (Ciencias naturales, ciencias sociales, ciencias de la salud y ciencias económicas.),
+2  Tecnología, Ingeniería de Sistemas o Computación (Por ejemplo, ciencias de la computación, ingeniería de sistemas, ingeniería de software, informática, sistemas de información, licenciatura en Computación, desarrollo de software, ciberseguridad, Big Data, entre otras relacionadas),
+3  Ingenierías relacionadas a la tecnología (Por ejemplo, ingeniería de sistemas, de software, informática, de telecomunicaciones, entre otras relacionadas),
+4  Otras ingenierías (Por ejemplo, ingeniería civil, eléctrica, telecomunicaciones, económica, comercial, industrial, química, entre otras),
+5  Humanidades (Filosofía, Teología, Literatura, Artes, Historia, entre otras),
+6  Comunicaciones,
+7  Marketing, Publicidad,
+8  Banca y Seguros,
+9  Comercio Internacional,
+10  Educación,
+11  Gastronomía,
+12  Hotelería, Turismo,
+13  Otro";
+46;D9_3_4_O_postdoc_area_other;Área Pos Doctorado - Otros;Educación;Texto ;Text typed by the participant;
+47;D10_1_student;Estado profesional [Soy estudiante];Carrera;Dicotómica;"1  Si 
 0  No";
-43;D10_2_intership;Estado profesional [Estoy realizando prácticas ];Carrera;Dicotómica;"1  Si 
+48;D10_2_intership;Estado profesional [Estoy realizando prácticas ];Carrera;Dicotómica;"1  Si 
 0  No";
-44;D10_3_worker;Estado profesional [Estoy trabajando];Carrera;Dicotómica;"1  Si 
+49;D10_3_worker;Estado profesional [Estoy trabajando];Carrera;Dicotómica;"1  Si 
 0  No";
-45;D11_professional_area;Sector profesional  Responde si actualmente estás trabajando en alguno de estos sectores - Listado de sectores económicos;Carrera;Factor;"1 Agricultura / ganadería
+50;D11_professional_area;Sector profesional  Responde si actualmente estás trabajando en alguno de estos sectores - Listado de sectores económicos;Carrera;Factor;"1 Agricultura / ganadería
 2 Administración pública y defensa
 3 Alojamiento y restaurantes
 4 Comercio
@@ -291,1132 +343,1132 @@ Zarumilla";
 15 Sector público
 16 Tecnología e Informática
 17 Otro";
-46;D11_O_professional_area_other;Sector profesional  Responde si actualmente estás trabajando en alguno de estos sectores - Listado de sectores económicos  [Otro];Carrera;Texto ;Text typed by the participant;
-47;D12_1_years_experience_total;Años de experiencia laboral Años de trabajo – Total;Carrera;Texto numérico ;number of years, typed by the participant;
-48;D12_2_1_years_experience_technology;Años de experiencia laboral  Años de trabajo – Por sector  [TI];Carrera;Texto numérico ;number of years, typed by the participant;
-49;D12_2_2_years_experience_engineering;Años de experiencia laboral  Años de trabajo – Por sector  [Ingeniería];Carrera;Texto numérico ;number of years, typed by the participant;
-50;D12_2_3_years_experience_science;Años de experiencia laboral  Años de trabajo – Por sector  [Ciencias];Carrera;Texto numérico ;number of years, typed by the participant;
-51;D12_2_4_years_experience_other_sectors;Años de experiencia laboral  Años de trabajo – Por sector  [Otros sectores];Carrera;Texto numérico ;number of years, typed by the participant;
-52;D13_being_in_stem_career;¿Está en una carrera STEM ?  Las carreras STEM hacen referencias a aquellas relacionadas a las áreas de ciencias, tecnología, ingeniería y matemáticas, las cuales son áreas de estudio muy importantes para ayudar al desarrollo de una sociedad cada vez más tecnológica.;Carrera;Dicotómica;"1  Si 
+51;D11_O_professional_area_other;Sector profesional  Responde si actualmente estás trabajando en alguno de estos sectores - Listado de sectores económicos  [Otro];Carrera;Texto ;Text typed by the participant;
+52;D12_1_years_experience_total;Años de experiencia laboral Años de trabajo – Total;Carrera;Texto numérico ;number of years, typed by the participant;
+53;D12_2_1_years_experience_technology;Años de experiencia laboral  Años de trabajo – Por sector  [TI];Carrera;Texto numérico ;number of years, typed by the participant;
+54;D12_2_2_years_experience_engineering;Años de experiencia laboral  Años de trabajo – Por sector  [Ingeniería];Carrera;Texto numérico ;number of years, typed by the participant;
+55;D12_2_3_years_experience_science;Años de experiencia laboral  Años de trabajo – Por sector  [Ciencias];Carrera;Texto numérico ;number of years, typed by the participant;
+56;D12_2_4_years_experience_other_sectors;Años de experiencia laboral  Años de trabajo – Por sector  [Otros sectores];Carrera;Texto numérico ;number of years, typed by the participant;
+57;D13_being_in_stem_career;¿Está en una carrera STEM ?  Las carreras STEM hacen referencias a aquellas relacionadas a las áreas de ciencias, tecnología, ingeniería y matemáticas, las cuales son áreas de estudio muy importantes para ayudar al desarrollo de una sociedad cada vez más tecnológica.;Carrera;Dicotómica;"1  Si 
 0  No";
-53;D14_1_organizational_leader;Actualmente, dirijo [Una organización];Liderazgo;Dicotómica;"1  Si 
+58;D14_1_organizational_leader;Actualmente, dirijo [Una organización];Liderazgo;Dicotómica;"1  Si 
 0  No";
-54;D14_2_unit_leader;Actualmente, dirijo [Una unidad interna];Liderazgo;Dicotómica;"1  Si 
+59;D14_2_unit_leader;Actualmente, dirijo [Una unidad interna];Liderazgo;Dicotómica;"1  Si 
 0  No";
-55;D14_3_group_leader;Actualmente, dirijo [Un grupo de personas];Liderazgo;Dicotómica;"1  Si 
+60;D14_3_group_leader;Actualmente, dirijo [Un grupo de personas];Liderazgo;Dicotómica;"1  Si 
 0  No";
-56;D15_women_in_my_classroom;Durante la universidad, qué porcentaje de personas en mi clase eran/son mujeres;Igualdad de género;Texto numérico ;percentage typed by the participant;
-57;D16_women_in_my_business_unit;En mi organización actual, qué porcentaje de personas trabajando mi unidad de negocios son mujeres;Igualdad de género;Texto numérico ;percentage typed by the participant;
-58;D17_have_a_laptop;Tengo una computadora/portátil que funciona bien;Equipos;Dicotómica;"1  Si 
+61;D15_women_in_my_classroom;Durante la universidad, qué porcentaje de personas en mi clase eran/son mujeres;Igualdad de género;Texto numérico ;percentage typed by the participant;
+62;D16_women_in_my_business_unit;En mi organización actual, qué porcentaje de personas trabajando mi unidad de negocios son mujeres;Igualdad de género;Texto numérico ;percentage typed by the participant;
+63;D17_have_a_laptop;Tengo una computadora/portátil que funciona bien;Equipos;Dicotómica;"1  Si 
 0  No";
-59;D18_have_wifi;Tengo conectividad estable a Internet las 24 horas del día, los 7 días de la semana;Equipos;Dicotómica;"1  Si 
+64;D18_have_wifi;Tengo conectividad estable a Internet las 24 horas del día, los 7 días de la semana;Equipos;Dicotómica;"1  Si 
 0  No";
-60;D19_have_electricity;Tengo energía eléctrica permanente;Equipos;Dicotómica;"1  Si 
+65;D19_have_electricity;Tengo energía eléctrica permanente;Equipos;Dicotómica;"1  Si 
 0  No";
-61;A1_1_snb;Me siento poco aceptada/o por las personas con las que trabajo/estudio.;Factores individuales: Factores individuales;Factor Likert;"1  Strongly disagree
+66;A1_1_snb;Me siento poco aceptada/o por las personas con las que trabajo/estudio.;Factores individuales: Factores individuales;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-62;A1_2_snb;Siento que estoy conectada/o vinculada/o con uno o más de mis compañeros durante mi experiencia laboral/académica.;Factores individuales: Factores individuales;Factor Likert;"1  Strongly disagree
+67;A1_2_snb;Siento que estoy conectada/o vinculada/o con uno o más de mis compañeros durante mi experiencia laboral/académica.;Factores individuales: Factores individuales;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-63;A1_3_snb;Me siento como un extraña/o durante mi experiencia laboral o académica.;Factores individuales: Factores individuales;Factor Likert;"1  Strongly disagree
+68;A1_3_snb;Me siento como un extraña/o durante mi experiencia laboral o académica.;Factores individuales: Factores individuales;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-64;A2_1_selfeff;Me siento cómoda/o con mi nivel de conocimiento para trabajar en campos STEM;Factores individuales: autoeficacia;Factor Likert;"1  Strongly disagree
+69;A2_1_selfeff;Me siento cómoda/o con mi nivel de conocimiento para trabajar en campos STEM;Factores individuales: autoeficacia;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-65;A2_2_selfeff;Tengo un fuerte conjunto de valores personales en los que creo;Factores individuales: autoeficacia;Factor Likert;"1  Strongly disagree
+70;A2_2_selfeff;Tengo un fuerte conjunto de valores personales en los que creo;Factores individuales: autoeficacia;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-66;A2_3_selfeff;Me apasiona seguir una carrera en los campos de STEM porque me brinda una herramienta para ayudar a los demás.;Factores individuales: autoeficacia;Factor Likert;"1  Strongly disagree
+71;A2_3_selfeff;Me apasiona seguir una carrera en los campos de STEM porque me brinda una herramienta para ayudar a los demás.;Factores individuales: autoeficacia;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-67;A2_4_selfeff;Confío en mi capacidad para trabajar en campos STEM.;Factores individuales: autoeficacia;Factor Likert;"1  Strongly disagree
+72;A2_4_selfeff;Confío en mi capacidad para trabajar en campos STEM.;Factores individuales: autoeficacia;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-68;A3_1_selfconf;Soy un gran fracaso;Factores individuales: Confianza en sí mismo;Factor Likert;"1  Strongly disagree
+73;A3_1_selfconf;Soy un gran fracaso;Factores individuales: Confianza en sí mismo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-69;A3_2_selfconf;Tengo bastante éxito;Factores individuales: Confianza en sí mismo;Factor Likert;"1  Strongly disagree
+74;A3_2_selfconf;Tengo bastante éxito;Factores individuales: Confianza en sí mismo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-70;A3_3_selfconf;No soy lo suficientemente inteligente;Factores individuales: Confianza en sí mismo;Factor Likert;"1  Strongly disagree
+75;A3_3_selfconf;No soy lo suficientemente inteligente;Factores individuales: Confianza en sí mismo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-71;A3_4_selfconf;Soy muy inteligente;Factores individuales: Confianza en sí mismo;Factor Likert;"1  Strongly disagree
+76;A3_4_selfconf;Soy muy inteligente;Factores individuales: Confianza en sí mismo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-72;A3_5_selfconf;Soy más brillante que otras personas.;Factores individuales: Confianza en sí mismo;Factor Likert;"1  Strongly disagree
+77;A3_5_selfconf;Soy más brillante que otras personas.;Factores individuales: Confianza en sí mismo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-73;A3_6_selfconf;Soy más tonta/o que otras personas.;Factores individuales: Confianza en sí mismo;Factor Likert;"1  Strongly disagree
+78;A3_6_selfconf;Soy más tonta/o que otras personas.;Factores individuales: Confianza en sí mismo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-74;A4_1_indep;Gano mi propio sustento;Factores individuales: Independencia;Factor Likert;"1  Strongly disagree
+79;A4_1_indep;Gano mi propio sustento;Factores individuales: Independencia;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-75;A4_2_indep;Pago por mi propio alquiler o hipoteca;Factores individuales: Independencia;Factor Likert;"1  Strongly disagree
+80;A4_2_indep;Pago por mi propio alquiler o hipoteca;Factores individuales: Independencia;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-76;A4_3_indep;Pago mis cuentas;Factores individuales: Independencia;Factor Likert;"1  Strongly disagree
+81;A4_3_indep;Pago mis cuentas;Factores individuales: Independencia;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-77;A4_4_indep;Administro mi propio dinero;Factores individuales: Independencia;Factor Likert;"1  Strongly disagree
+82;A4_4_indep;Administro mi propio dinero;Factores individuales: Independencia;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-78;A5_1_women_ident;Me gusta hacer el mismo tipo de cosas que la mayoría de las mujeres.;Factores individuales: identidad de género;Factor Likert;"1  Strongly disagree
+83;A5_1_women_ident;Me gusta hacer el mismo tipo de cosas que la mayoría de las mujeres.;Factores individuales: identidad de género;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-79;A5_2_women_ident;A veces la gente dice que actúo más como un hombre que como una mujer.;Factores individuales: identidad de género;Factor Likert;"1  Strongly disagree
+84;A5_2_women_ident;A veces la gente dice que actúo más como un hombre que como una mujer.;Factores individuales: identidad de género;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-80;A5_3_women_ident;A veces pienso que es más fácil ser hombre que ser mujer.;Factores individuales: identidad de género;Factor Likert;"1  Strongly disagree
+85;A5_3_women_ident;A veces pienso que es más fácil ser hombre que ser mujer.;Factores individuales: identidad de género;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-81;A5_4_women_ident;Me gustaría que las mujeres pudieran hacer más de las cosas que los hombres pueden hacer.;Factores individuales: identidad de género;Factor Likert;"1  Strongly disagree
+86;A5_4_women_ident;Me gustaría que las mujeres pudieran hacer más de las cosas que los hombres pueden hacer.;Factores individuales: identidad de género;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-82;A5_5_women_ident;A veces pienso que es más divertido ser hombre.;Factores individuales: identidad de género;Factor Likert;"1  Strongly disagree
+87;A5_5_women_ident;A veces pienso que es más divertido ser hombre.;Factores individuales: identidad de género;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-83;A5_6_women_ident;Creo que es injusto que a las mujeres no se les permita hacer ciertas  cosas que los hombres pueden hacer.;Factores individuales: identidad de género;Factor Likert;"1  Strongly disagree
+88;A5_6_women_ident;Creo que es injusto que a las mujeres no se les permita hacer ciertas  cosas que los hombres pueden hacer.;Factores individuales: identidad de género;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-84;A6_1_bullying;Mis compañeros se burlaban de mí.;Factores individuales: consecuencias del bullying;Factor Likert;"1  Strongly disagree
+89;A6_1_bullying;Mis compañeros se burlaban de mí.;Factores individuales: consecuencias del bullying;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-85;A6_2_bullying;Mis compañeros me hicieron avergonzar.;Factores individuales: consecuencias del bullying;Factor Likert;"1  Strongly disagree
+90;A6_2_bullying;Mis compañeros me hicieron avergonzar.;Factores individuales: consecuencias del bullying;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-86;A6_3_bullying;Mis compañeros no me permiten participar en proyectos o actividades especiales.;Factores individuales: consecuencias del bullying;Factor Likert;"1  Strongly disagree
+91;A6_3_bullying;Mis compañeros no me permiten participar en proyectos o actividades especiales.;Factores individuales: consecuencias del bullying;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-87;A6_4_bullying;Mis compañeros me eligieron en último lugar.;Factores individuales: consecuencias del bullying;Factor Likert;"1  Strongly disagree
+92;A6_4_bullying;Mis compañeros me eligieron en último lugar.;Factores individuales: consecuencias del bullying;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-88;A6_5_bullying;Nadie me ayudó cuando pedí ayuda.;Factores individuales: consecuencias del bullying;Factor Likert;"1  Strongly disagree
+93;A6_5_bullying;Nadie me ayudó cuando pedí ayuda.;Factores individuales: consecuencias del bullying;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-89;A7_1_meaning;El trabajo que hago es muy importante para mí.;Factores individuales: significado;Factor Likert;"1  Strongly disagree
+94;A7_1_meaning;El trabajo que hago es muy importante para mí.;Factores individuales: significado;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-90;A7_2_meaning;Mis actividades laborales son personalmente significativas para mí;Factores individuales: significado;Factor Likert;"1  Strongly disagree
+95;A7_2_meaning;Mis actividades laborales son personalmente significativas para mí;Factores individuales: significado;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-91;A7_3_meaning;El trabajo que hago es significativo para mí.;Factores individuales: significado;Factor Likert;"1  Strongly disagree
+96;A7_3_meaning;El trabajo que hago es significativo para mí.;Factores individuales: significado;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-92;B1_01_nerd;Creo que las personas en carreras STEM   [Tienen dificultad para salir con alguien.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
+97;B1_01_nerd;Creo que las personas en carreras STEM   [Tienen dificultad para salir con alguien.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-93;B1_02_nerd;Creo que las personas en carreras STEM   [Son socialmente torpes.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
+98;B1_02_nerd;Creo que las personas en carreras STEM   [Son socialmente torpes.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-94;B1_03_nerd;Creo que las personas en carreras STEM   [No son atractivas/os.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
+99;B1_03_nerd;Creo que las personas en carreras STEM   [No son atractivas/os.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-95;B1_04_nerd;Creo que las personas en carreras STEM   [No tienen muchas/os amigas/os.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
+100;B1_04_nerd;Creo que las personas en carreras STEM   [No tienen muchas/os amigas/os.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-96;B1_05_nerd;"Creo que las personas en carreras STEM   [Son nerds (""geeky"").]";Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
+101;B1_05_nerd;"Creo que las personas en carreras STEM   [Son nerds (""geeky"").]";Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-97;B1_06_nerd;Creo que las personas en carreras STEM   [Son introvertidas/os.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
+102;B1_06_nerd;Creo que las personas en carreras STEM   [Son introvertidas/os.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-98;B1_07_genius;Creo que las personas en carreras STEM   [Son dotadas/os en matemáticas.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
+103;B1_07_genius;Creo que las personas en carreras STEM   [Son dotadas/os en matemáticas.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-99;B1_08_genius;Creo que las personas en carreras STEM   [Son naturalmente muy inteligentes.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
+104;B1_08_genius;Creo que las personas en carreras STEM   [Son naturalmente muy inteligentes.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-100;B1_09_genius;Creo que las personas en carreras STEM   [Son genias/os.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
+105;B1_09_genius;Creo que las personas en carreras STEM   [Son genias/os.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-101;B1_10_genius;Creo que las personas en carreras STEM   [Están obsesionadas/os con las computadoras.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
+106;B1_10_genius;Creo que las personas en carreras STEM   [Están obsesionadas/os con las computadoras.];Factores educativos: estereotipos relacionados con las carreras de TI;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-102;B2_mentor;Tengo un mentor;Factores educativos: calidad de la mentoría;Dicotómica;"1  Si 
+107;B2_mentor;Tengo un mentor;Factores educativos: calidad de la mentoría;Dicotómica;"1  Si 
 0  No";
-103;B2_1_mentorship_quality;Mi(s) mentor (es) y yo nos beneficiamos de nuestra relación;Factores educativos: calidad de la mentoría;Factor Likert;"1  Strongly disagree
+108;B2_1_mentorship_quality;Mi(s) mentor (es) y yo nos beneficiamos de nuestra relación;Factores educativos: calidad de la mentoría;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-104;B2_2_mentorship_quality;Utilicé efectivamente la mentoría;Factores educativos: calidad de la mentoría;Factor Likert;"1  Strongly disagree
+109;B2_2_mentorship_quality;Utilicé efectivamente la mentoría;Factores educativos: calidad de la mentoría;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-105;B2_3_mentorship_quality;Disfruté de la(s) relación(es) de mentoría de alta calidad;Factores educativos: calidad de la mentoría;Factor Likert;"1  Strongly disagree
+110;B2_3_mentorship_quality;Disfruté de la(s) relación(es) de mentoría de alta calidad;Factores educativos: calidad de la mentoría;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-106;B3_1_gender_equality;Mis compañeras/os de clase son tratadas/os de manera diferente por sus profesoras/es dependiendo de su género;Factores educativos: percepción institucional de la igualdad de género;Factor Likert;"1  Strongly disagree
+111;B3_1_gender_equality;Mis compañeras/os de clase son tratadas/os de manera diferente por sus profesoras/es dependiendo de su género;Factores educativos: percepción institucional de la igualdad de género;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-107;B3_2_gender_equality;La igualdad de género es parte de las políticas de mi institución;Factores educativos: percepción institucional de la igualdad de género;Factor Likert;"1  Strongly disagree
+112;B3_2_gender_equality;La igualdad de género es parte de las políticas de mi institución;Factores educativos: percepción institucional de la igualdad de género;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-108;B3_3_gender_equality;Las personas de mi organización reciben el mismo apoyo institucional, independientemente de su género.;Factores educativos: percepción institucional de la igualdad de género;Factor Likert;"1  Strongly disagree
+113;B3_3_gender_equality;Las personas de mi organización reciben el mismo apoyo institucional, independientemente de su género.;Factores educativos: percepción institucional de la igualdad de género;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-109;B3_4_gender_equality;Mis compañeras/os tratan a sus pares de otros géneros por igual.;Factores educativos: percepción institucional de la igualdad de género;Factor Likert;"1  Strongly disagree
+114;B3_4_gender_equality;Mis compañeras/os tratan a sus pares de otros géneros por igual.;Factores educativos: percepción institucional de la igualdad de género;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-110;B3_5_gender_equality;Las/los profesoras/es /líderes de mi facultad/unidad de negocios tratan a todas/os los estudiantes/personal por igual, independientemente de su género.;Factores educativos: percepción institucional de la igualdad de género;Factor Likert;"1  Strongly disagree
+115;B3_5_gender_equality;Las/los profesoras/es /líderes de mi facultad/unidad de negocios tratan a todas/os los estudiantes/personal por igual, independientemente de su género.;Factores educativos: percepción institucional de la igualdad de género;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-111;B4_1_peer_group_interac;Desde que llegué a esta Institución he desarrollado una estrecha relación personal con otros compañeras/os;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
+116;B4_1_peer_group_interac;Desde que llegué a esta Institución he desarrollado una estrecha relación personal con otros compañeras/os;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-112;B4_2_peer_group_interac;Las amistades de las/os  compañeras/os que desarrollé en esta Institución fueron personalmente satisfactorias;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
+117;B4_2_peer_group_interac;Las amistades de las/os  compañeras/os que desarrollé en esta Institución fueron personalmente satisfactorias;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-113;B4_3_peer_group_interac;Mis relaciones interpersonales con otras/os compañeras/os han influido positivamente en mi crecimiento personal, actitudes y valores.;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
+118;B4_3_peer_group_interac;Mis relaciones interpersonales con otras/os compañeras/os han influido positivamente en mi crecimiento personal, actitudes y valores.;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-114;B4_4_peer_group_interac;Mis relaciones interpersonales con otras/os compañeras/os influyeron positivamente en mi crecimiento intelectual e interés en ideas.;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
+119;B4_4_peer_group_interac;Mis relaciones interpersonales con otras/os compañeras/os influyeron positivamente en mi crecimiento intelectual e interés en ideas.;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-115;B4_5_peer_group_interac;Me ha costado conocer y hacer amistad con otras/os compañeras/os.;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
+120;B4_5_peer_group_interac;Me ha costado conocer y hacer amistad con otras/os compañeras/os.;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-116;B4_6_peer_group_interac;Pocos de las/os compañeras/os que conozco estarían dispuestos a escucharme y ayudarme si tuviera un problema personal;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
+121;B4_6_peer_group_interac;Pocos de las/os compañeras/os que conozco estarían dispuestos a escucharme y ayudarme si tuviera un problema personal;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-117;B4_7_peer_group_interac;La mayoría de las/os compañeras/os de mi institución tienen valores y actitudes diferentes a los míos.;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
+122;B4_7_peer_group_interac;La mayoría de las/os compañeras/os de mi institución tienen valores y actitudes diferentes a los míos.;Factores educativos: interacciones entre pares y grupos;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-118;C1_1_org_culture;Mi empleadora/or promueve la igualdad de oportunidades para el desarrollo y la progresión profesional de las personas talentosas.;Factores profesionales: cultura organizacional;Factor Likert;"1  Strongly disagree
+123;C1_1_org_culture;Mi empleadora/or promueve la igualdad de oportunidades para el desarrollo y la progresión profesional de las personas talentosas.;Factores profesionales: cultura organizacional;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-119;C1_2_org_culture;Las/os líderes en mi lugar de trabajo son conscientes del valor de apoyar una fuerza laboral diversa;Factores profesionales: cultura organizacional;Factor Likert;"1  Strongly disagree
+124;C1_2_org_culture;Las/os líderes en mi lugar de trabajo son conscientes del valor de apoyar una fuerza laboral diversa;Factores profesionales: cultura organizacional;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-120;C1_3_org_culture;Mi empleadora/or garantiza mensajes neutros en cuanto al género en los anuncios de trabajo;Factores profesionales: cultura organizacional;Factor Likert;"1  Strongly disagree
+125;C1_3_org_culture;Mi empleadora/or garantiza mensajes neutros en cuanto al género en los anuncios de trabajo;Factores profesionales: cultura organizacional;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-121;C1_4_org_culture;Mi lugar de trabajo tiene mujeres en puestos de alta dirección;Factores profesionales: cultura organizacional;Factor Likert;"1  Strongly disagree
+126;C1_4_org_culture;Mi lugar de trabajo tiene mujeres en puestos de alta dirección;Factores profesionales: cultura organizacional;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-122;C1_5_org_culture;Mi lugar de trabajo tiene un programa de recompensas para reconocer a las colaboradoras mujeres.;Factores profesionales: cultura organizacional;Factor Likert;"1  Strongly disagree
+127;C1_5_org_culture;Mi lugar de trabajo tiene un programa de recompensas para reconocer a las colaboradoras mujeres.;Factores profesionales: cultura organizacional;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-123;C2_1_self_determ;Tengo una autonomía significativa para determinar cómo hago mi trabajo;Factores profesionales: Apoyo en el lugar de trabajo;Factor Likert;"1  Strongly disagree
+128;C2_1_self_determ;Tengo una autonomía significativa para determinar cómo hago mi trabajo;Factores profesionales: Apoyo en el lugar de trabajo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-124;C2_2_self_determ;Puedo decidir por mí mismo cómo hacer mi trabajo;Factores profesionales: Apoyo en el lugar de trabajo;Factor Likert;"1  Strongly disagree
+129;C2_2_self_determ;Puedo decidir por mí mismo cómo hacer mi trabajo;Factores profesionales: Apoyo en el lugar de trabajo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-125;C2_3_self_determ;Tengo considerables oportunidades de independencia y libertad en la forma en que hago mi trabajo.;Factores profesionales: Apoyo en el lugar de trabajo;Factor Likert;"1  Strongly disagree
+130;C2_3_self_determ;Tengo considerables oportunidades de independencia y libertad en la forma en que hago mi trabajo.;Factores profesionales: Apoyo en el lugar de trabajo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-126;C2_4_impact;Tengo un gran impacto en lo que sucede en mi departamento u organización.;Factores profesionales: Apoyo en el lugar de trabajo;Factor Likert;"1  Strongly disagree
+131;C2_4_impact;Tengo un gran impacto en lo que sucede en mi departamento u organización.;Factores profesionales: Apoyo en el lugar de trabajo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-127;C2_5_impact;Tengo mucho control sobre lo que sucede en mi departamento.;Factores profesionales: Apoyo en el lugar de trabajo;Factor Likert;"1  Strongly disagree
+132;C2_5_impact;Tengo mucho control sobre lo que sucede en mi departamento.;Factores profesionales: Apoyo en el lugar de trabajo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-128;C2_6_impact;Tengo una influencia significativa sobre lo que sucede en mi departamento ;Factores profesionales: Apoyo en el lugar de trabajo;Factor Likert;"1  Strongly disagree
+133;C2_6_impact;Tengo una influencia significativa sobre lo que sucede en mi departamento ;Factores profesionales: Apoyo en el lugar de trabajo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-129;E1_1_sexism;Alguien en el trabajo/universidad hace comentarios despectivos sobre tu género;Factores sociales: sexismo;Factor Likert;"1  Strongly disagree
+134;E1_1_sexism;Alguien en el trabajo/universidad hace comentarios despectivos sobre tu género;Factores sociales: sexismo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-130;E1_2_sexism;Alguien en el trabajo/universidad hace bromas sobre tu género;Factores sociales: sexismo;Factor Likert;"1  Strongly disagree
+135;E1_2_sexism;Alguien en el trabajo/universidad hace bromas sobre tu género;Factores sociales: sexismo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-131;E1_3_sexism;Alguien en el trabajo/universidad usa insultos sexistas para describirte.;Factores sociales: sexismo;Factor Likert;"1  Strongly disagree
+136;E1_3_sexism;Alguien en el trabajo/universidad usa insultos sexistas para describirte.;Factores sociales: sexismo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-132;E1_4_sexism;Alguien en el trabajo/universidad hace comentarios sexistas (por ejemplo, dice que las personas de tu género no son muy inteligentes o no pueden hacer el trabajo);Factores sociales: sexismo;Factor Likert;"1  Strongly disagree
+137;E1_4_sexism;Alguien en el trabajo/universidad hace comentarios sexistas (por ejemplo, dice que las personas de tu género no son muy inteligentes o no pueden hacer el trabajo);Factores sociales: sexismo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-133;E1_5_sexism;Alguien en el trabajo/universidad lo excluye de las interacciones sociales durante o después del trabajo debido a su género;Factores sociales: sexismo;Factor Likert;"1  Strongly disagree
+138;E1_5_sexism;Alguien en el trabajo/universidad lo excluye de las interacciones sociales durante o después del trabajo debido a su género;Factores sociales: sexismo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-134;E1_6_sexism;Alguien en el trabajo/universidad no te da la información que necesitas para hacer tu trabajo debido a tu género;Factores sociales: sexismo;Factor Likert;"1  Strongly disagree
+139;E1_6_sexism;Alguien en el trabajo/universidad no te da la información que necesitas para hacer tu trabajo debido a tu género;Factores sociales: sexismo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-135;E2_1_lead_behav_bias;Las mujeres no permitirían que sus emociones influyeran en su comportamiento gerencial más que los hombres.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
+140;E2_1_lead_behav_bias;Las mujeres no permitirían que sus emociones influyeran en su comportamiento gerencial más que los hombres.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-136;E2_2_lead_behav_bias;Para ser una ejecutiva exitosa, una mujer no tiene que sacrificar parte de su feminidad.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
+141;E2_2_lead_behav_bias;Para ser una ejecutiva exitosa, una mujer no tiene que sacrificar parte de su feminidad.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-137;E2_3_lead_behav_bias;Las mujeres no son lo suficientemente ambiciosas para triunfar en el mundo del trabajo.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
+142;E2_3_lead_behav_bias;Las mujeres no son lo suficientemente ambiciosas para triunfar en el mundo del trabajo.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-138;E2_4_lead_behav_bias;Las mujeres no pueden ser asertivas en situaciones de negocios que lo requieran.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
+143;E2_4_lead_behav_bias;Las mujeres no pueden ser asertivas en situaciones de negocios que lo requieran.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-139;E2_5_lead_behav_bias;Las mujeres tienen la confianza en sí mismas que requiere una buena líder.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
+144;E2_5_lead_behav_bias;Las mujeres tienen la confianza en sí mismas que requiere una buena líder.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-140;E2_6_lead_behav_bias;Las mujeres no son lo suficientemente competitivas para tener éxito en el mundo del trabajo.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
+145;E2_6_lead_behav_bias;Las mujeres no son lo suficientemente competitivas para tener éxito en el mundo del trabajo.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-141;E2_7_lead_behav_bias;Las mujeres no pueden ser agresivas en situaciones de negocios que lo requieran.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
+146;E2_7_lead_behav_bias;Las mujeres no pueden ser agresivas en situaciones de negocios que lo requieran.;Factores sociales: sesgo en el comportamiento de liderazgo;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";?
-142;E3_1_women_stereotypes;Las mujeres ahora son vistas como autoeficaces;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
+147;E3_1_women_stereotypes;Las mujeres ahora son vistas como autoeficaces;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-143;E3_2_women_stereotypes;Las mujeres ahora son vistas como optimistas;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
+148;E3_2_women_stereotypes;Las mujeres ahora son vistas como optimistas;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-144;E3_3_women_stereotypes;En la actualidad, se considera que las mujeres son altamente calificadas en matemáticas.;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
+149;E3_3_women_stereotypes;En la actualidad, se considera que las mujeres son altamente calificadas en matemáticas.;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-145;E3_4_women_stereotypes;Ahora se considera que las mujeres son altamente calificadas en ingeniería;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
+150;E3_4_women_stereotypes;Ahora se considera que las mujeres son altamente calificadas en ingeniería;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-146;E3_5_women_stereotypes;Ahora se considera que las mujeres son altamente calificadas en tecnología.;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
+151;E3_5_women_stereotypes;Ahora se considera que las mujeres son altamente calificadas en tecnología.;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-147;E3_6_women_stereotypes;Las mujeres ahora son vistas como independientes;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
+152;E3_6_women_stereotypes;Las mujeres ahora son vistas como independientes;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-148;E3_7_women_stereotypes;Las mujeres ahora son vistas como autónomas;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
+153;E3_7_women_stereotypes;Las mujeres ahora son vistas como autónomas;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-149;E3_8_women_stereotypes;Actualmente se considera que las mujeres dependen de otras personas.;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
+154;E3_8_women_stereotypes;Actualmente se considera que las mujeres dependen de otras personas.;Factores sociales: estereotipos relacionados con las mujeres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-150;F1_1_family_supp;Mis familiares confían en mí.;Factores sociales: apoyo familiar;Factor Likert;"1  Strongly disagree
+155;F1_1_family_supp;Mis familiares confían en mí.;Factores sociales: apoyo familiar;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-151;F1_2_family_supp;Mi familia me cuida;Factores sociales: apoyo familiar;Factor Likert;"1  Strongly disagree
+156;F1_2_family_supp;Mi familia me cuida;Factores sociales: apoyo familiar;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-152;F1_3_family_supp;Mi familia me respeta;Factores sociales: apoyo familiar;Factor Likert;"1  Strongly disagree
+157;F1_3_family_supp;Mi familia me respeta;Factores sociales: apoyo familiar;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-153;F1_4_family_supp;Mi familia me tiene en alta estima;Factores sociales: apoyo familiar;Factor Likert;"1  Strongly disagree
+158;F1_4_family_supp;Mi familia me tiene en alta estima;Factores sociales: apoyo familiar;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-154;F1_5_family_supp;Soy amado por mi familia;Factores sociales: apoyo familiar;Factor Likert;"1  Strongly disagree
+159;F1_5_family_supp;Soy amado por mi familia;Factores sociales: apoyo familiar;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-155;F1_6_family_supp;No me siento cercano a mi familia;Factores sociales: apoyo familiar;Factor Likert;"1  Strongly disagree
+160;F1_6_family_supp;No me siento cercano a mi familia;Factores sociales: apoyo familiar;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-156;F2_1_parental_expectations;Mi madre o padre me dio material escrito sobre carreras específicas;Factores sociales: expectativas de los padres;Factor Likert;"1  Strongly disagree
+161;F2_1_parental_expectations;Mi madre o padre me dio material escrito sobre carreras específicas;Factores sociales: expectativas de los padres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-157;F2_2_parental_expectations;Mi madre o padre me dio material escrito sobre universidades específicas;Factores sociales: expectativas de los padres;Factor Likert;"1  Strongly disagree
+162;F2_2_parental_expectations;Mi madre o padre me dio material escrito sobre universidades específicas;Factores sociales: expectativas de los padres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-158;F2_3_parental_expectations;Mi madre o padre me incentivó a hacer preguntas sobre diferentes trabajos;Factores sociales: expectativas de los padres;Factor Likert;"1  Strongly disagree
+163;F2_3_parental_expectations;Mi madre o padre me incentivó a hacer preguntas sobre diferentes trabajos;Factores sociales: expectativas de los padres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-159;F2_4_parental_expectations;Mi madre o padre me incentivó a hablar con ellos sobre mis planes profesionales;Factores sociales: expectativas de los padres;Factor Likert;"1  Strongly disagree
+164;F2_4_parental_expectations;Mi madre o padre me incentivó a hablar con ellos sobre mis planes profesionales;Factores sociales: expectativas de los padres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-160;F2_5_parental_expectations;Mi madre o padre dice que se sentiría decepcionada/o si no entro en una carrera específica en la que él/ella quiere que entre.;Factores sociales: expectativas de los padres;Factor Likert;"1  Strongly disagree
+165;F2_5_parental_expectations;Mi madre o padre dice que se sentiría decepcionada/o si no entro en una carrera específica en la que él/ella quiere que entre.;Factores sociales: expectativas de los padres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-161;F3_1_parent_completed_college;Mi madre o mi padre se graduaron de estudios superiores;Factores sociales: Antecedentes educativos de los padres;Factor Likert;"1  Strongly disagree
+166;F3_1_parent_completed_college;Mi madre o mi padre se graduaron de estudios superiores;Factores sociales: Antecedentes educativos de los padres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-162;F3_2_parent_completed_college_stem;Mi madre o mi padre completaron la educación superior en una carrera STEM ;Factores sociales: Antecedentes educativos de los padres;Factor Likert;"1  Strongly disagree
+167;F3_2_parent_completed_college_stem;Mi madre o mi padre completaron la educación superior en una carrera STEM ;Factores sociales: Antecedentes educativos de los padres;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-163;G1_1_stem_career_interest;Estoy muy interesada/o en trabajos relacionados con STEM;Variables dependientes: Interés en la carrera STEM;Factor Likert;"1  Strongly disagree
+168;G1_1_stem_career_interest;Estoy muy interesada/o en trabajos relacionados con STEM;Variables dependientes: Interés en la carrera STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-164;G1_2_stem_career_interest;Espero que mi trabajo futuro pueda estar relacionado con STEM;Variables dependientes: Interés en la carrera STEM;Factor Likert;"1  Strongly disagree
+169;G1_2_stem_career_interest;Espero que mi trabajo futuro pueda estar relacionado con STEM;Variables dependientes: Interés en la carrera STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-165;G1_3_stem_career_interest;La carrera de mis sueños está relacionada con STEM;Variables dependientes: Interés en la carrera STEM;Factor Likert;"1  Strongly disagree
+170;G1_3_stem_career_interest;La carrera de mis sueños está relacionada con STEM;Variables dependientes: Interés en la carrera STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-166;G1_4_stem_career_interest;Espero que mi trabajo futuro pueda usar STEM;Variables dependientes: Interés en la carrera STEM;Factor Likert;"1  Strongly disagree
+171;G1_4_stem_career_interest;Espero que mi trabajo futuro pueda usar STEM;Variables dependientes: Interés en la carrera STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-167;G1_5_stem_career_interest;Me interesa ser científica/o, ingeniera/o o tecnóloga/o;Variables dependientes: Interés en la carrera STEM;Factor Likert;"1  Strongly disagree
+172;G1_5_stem_career_interest;Me interesa ser científica/o, ingeniera/o o tecnóloga/o;Variables dependientes: Interés en la carrera STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-168;G2_01_mtl_affective_identity;La mayoría de las veces, prefiero ser una/un líder que una/un seguidora/or cuando trabajo con un grupo.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
+173;G2_01_mtl_affective_identity;La mayoría de las veces, prefiero ser una/un líder que una/un seguidora/or cuando trabajo con un grupo.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-169;G2_02_mtl_affective_identity;Soy el tipo de persona que no está interesada en liderar a otras/os.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
+174;G2_02_mtl_affective_identity;Soy el tipo de persona que no está interesada en liderar a otras/os.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-170;G2_03_mtl_affective_identity;Definitivamente no soy una/un líder por naturaleza.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
+175;G2_03_mtl_affective_identity;Definitivamente no soy una/un líder por naturaleza.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-171;G2_04_mtl_affective_identity;Soy el tipo de persona a la que le gusta estar a cargo de las/os demás.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
+176;G2_04_mtl_affective_identity;Soy el tipo de persona a la que le gusta estar a cargo de las/os demás.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-172;G2_05_mtl_affective_identity;Creo que puedo contribuir más a un grupo si soy una/un seguidora/or que un líder.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
+177;G2_05_mtl_affective_identity;Creo que puedo contribuir más a un grupo si soy una/un seguidora/or que un líder.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-173;G2_06_mtl_affective_identity;Normalmente quiero ser la/el líder en los grupos donde trabajo.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
+178;G2_06_mtl_affective_identity;Normalmente quiero ser la/el líder en los grupos donde trabajo.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-174;G2_07_mtl_affective_identity;Soy del tipo de persona que apoyaría activamente a una/un líder, pero prefiero no ser nombrada/o líder.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
+179;G2_07_mtl_affective_identity;Soy del tipo de persona que apoyaría activamente a una/un líder, pero prefiero no ser nombrada/o líder.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-175;G2_08_mtl_affective_identity;Tiendo a tomar las riendas de la mayoría de los grupos o equipos con los que trabajo.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
+180;G2_08_mtl_affective_identity;Tiendo a tomar las riendas de la mayoría de los grupos o equipos con los que trabajo.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-176;G2_09_mtl_affective_identity;Rara vez me resisto a ser la/el líder de un grupo.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
+181;G2_09_mtl_affective_identity;Rara vez me resisto a ser la/el líder de un grupo.;Variables dependientes: Motivación para liderar – Identidad afectiva.;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-177;G2_10_mtl_social_normative;Siento que tengo el deber de guiar a otras/os personas si me lo piden.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
+182;G2_10_mtl_social_normative;Siento que tengo el deber de guiar a otras/os personas si me lo piden.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-178;G2_11_mtl_social_normative;Acepto liderar cuando otras/os personas me lo pidan o me indiquen.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
+183;G2_11_mtl_social_normative;Acepto liderar cuando otras/os personas me lo pidan o me indiquen.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-179;G2_12_mtl_social_normative;Me enseñaron a creer en el valor de liderar a otras/os ;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
+184;G2_12_mtl_social_normative;Me enseñaron a creer en el valor de liderar a otras/os ;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-180;G2_13_mtl_social_normative;Es apropiado que las personas acepten roles o posiciones de liderazgo cuando se les solicite.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
+185;G2_13_mtl_social_normative;Es apropiado que las personas acepten roles o posiciones de liderazgo cuando se les solicite.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";?
-181;G2_14_mtl_social_normative;Me enseñaron que siempre debo ofrecerme como voluntaria/o para guiar a otras/os personas si puedo.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
+186;G2_14_mtl_social_normative;Me enseñaron que siempre debo ofrecerme como voluntaria/o para guiar a otras/os personas si puedo.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-182;G2_15_mtl_social_normative;No está bien rechazar roles de liderazgo.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
+187;G2_15_mtl_social_normative;No está bien rechazar roles de liderazgo.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-183;G2_16_mtl_social_normative;Es un honor y un privilegio que me pidan que lidere.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
+188;G2_16_mtl_social_normative;Es un honor y un privilegio que me pidan que lidere.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-184;G2_17_mtl_social_normative;Las personas deben ofrecerse como voluntarias para liderar en lugar de esperar a que otras/os personas pregunten o voten por ellas.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
+189;G2_17_mtl_social_normative;Las personas deben ofrecerse como voluntarias para liderar en lugar de esperar a que otras/os personas pregunten o voten por ellas.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-185;G2_18_mtl_social_normative;Nunca aceptaría liderar solo porque otras/os personas votaron por mí.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
+190;G2_18_mtl_social_normative;Nunca aceptaría liderar solo porque otras/os personas votaron por mí.;Variables dependientes: Motivación para liderar - Identidad afectiva - Socionormativa;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";Reverse Coding Recommended
-186;G3_01_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Garantizar un mismo salario por el mismo trabajo.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
+191;G3_01_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Garantizar un mismo salario por el mismo trabajo.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-187;G3_02_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Preservar un balance entre la vida laboral y personal.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
+192;G3_02_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Preservar un balance entre la vida laboral y personal.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-188;G3_03_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Erradicar el acoso sexual y violencia.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
+193;G3_03_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Erradicar el acoso sexual y violencia.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-189;G3_04_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Garantizar una paridad de género para puestos de liderazgo/políticos.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
+194;G3_04_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Garantizar una paridad de género para puestos de liderazgo/políticos.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-190;G3_05_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Garantizar la participación de mujeres (cuota de género).];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
+195;G3_05_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Garantizar la participación de mujeres (cuota de género).];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-191;G3_06_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Atraer la participación de mujeres en campos STEM.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
+196;G3_06_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Atraer la participación de mujeres en campos STEM.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-192;G3_07_policy_importance; Considero que las siguientes políticas son totalmente relevantes [Organizar programas de tutoría para mujeres jóvenes (como conocer mujeres ingenieras, etc.).];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
+197;G3_07_policy_importance; Considero que las siguientes políticas son totalmente relevantes [Organizar programas de tutoría para mujeres jóvenes (como conocer mujeres ingenieras, etc.).];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-193;G3_08_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Demostrar acciones afirmativas como contratar a mujeres o minorías de grupos sociales excluidos.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
+198;G3_08_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Demostrar acciones afirmativas como contratar a mujeres o minorías de grupos sociales excluidos.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-194;G3_09_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Retener y empoderar a mujeres de áreas STEM.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
+199;G3_09_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Retener y empoderar a mujeres de áreas STEM.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-195;G3_10_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Apoyar el crecimiento profesional de las mujeres.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
+200;G3_10_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Apoyar el crecimiento profesional de las mujeres.];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-196;G3_11_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Brindar apoyo financiero a estudiantes mujeres en áreas STEM];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
+201;G3_11_policy_importance;Considero que las siguientes políticas son totalmente relevantes [Brindar apoyo financiero a estudiantes mujeres en áreas STEM];Variables dependientes: Importancia de las políticas para promover la participación femenina en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-197;G4_01_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Garantizar un mismo salario por el mismo trabajo.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
+202;G4_01_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Garantizar un mismo salario por el mismo trabajo.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-198;G4_02_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Preservar un balance entre la vida laboral y personal.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
+203;G4_02_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Preservar un balance entre la vida laboral y personal.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-199;G4_03_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Erradicar el acoso sexual y violencia.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
+204;G4_03_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Erradicar el acoso sexual y violencia.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-200;G4_04_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Garantizar una paridad de género para puestos de liderazgo/políticos.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
+205;G4_04_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Garantizar una paridad de género para puestos de liderazgo/políticos.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-201;G4_05_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Garantizar la participación de mujeres (cuota de género).];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
+206;G4_05_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Garantizar la participación de mujeres (cuota de género).];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-202;G4_06_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Atraer la participación de mujeres en campos STEM.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
+207;G4_06_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Atraer la participación de mujeres en campos STEM.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-203;G4_07_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Organizar programas de tutoría para mujeres jóvenes (como conocer mujeres ingenieras, etc.).];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
+208;G4_07_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Organizar programas de tutoría para mujeres jóvenes (como conocer mujeres ingenieras, etc.).];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-204;G4_08_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Demostrar acciones afirmativas como contratar a mujeres o minorías de grupos sociales excluidos.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
+209;G4_08_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Demostrar acciones afirmativas como contratar a mujeres o minorías de grupos sociales excluidos.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-205;G4_09_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Retener y empoderar a mujeres de áreas STEM.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
+210;G4_09_policy_existence;En mi organización existen políticas vigentes y explícitas para: [Retener y empoderar a mujeres de áreas STEM.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-206;G4_10_barriers;En mi organización existen políticas vigentes y explícitas para: [Apoyar el crecimiento profesional de las mujeres.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
+211;G4_10_barriers;En mi organización existen políticas vigentes y explícitas para: [Apoyar el crecimiento profesional de las mujeres.];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-207;G4_11_barriers;En mi organización existen políticas vigentes y explícitas para: [Brindar apoyo financiero a estudiantes mujeres en áreas STEM];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
+212;G4_11_barriers;En mi organización existen políticas vigentes y explícitas para: [Brindar apoyo financiero a estudiantes mujeres en áreas STEM];Variables dependientes: Políticas de mi organización para promover la participación de las mujeres en STEM;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-208;G5_01_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya garantizado un mismo salario por el mismo trabajo];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
+213;G5_01_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya garantizado un mismo salario por el mismo trabajo];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-209;G5_02_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya preservado un balance entre la vida laboral y personal];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
+214;G5_02_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya preservado un balance entre la vida laboral y personal];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-210;G5_03_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya erradicado el acoso sexual y violencia];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
+215;G5_03_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya erradicado el acoso sexual y violencia];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-211;G5_04_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya garantizado una paridad de género para puestos de liderazgo/políticos.];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
+216;G5_04_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya garantizado una paridad de género para puestos de liderazgo/políticos.];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-212;G5_05_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya garantizado la participación de mujeres (cuota de género)];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
+217;G5_05_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya garantizado la participación de mujeres (cuota de género)];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-213;G5_06_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya atraído la participación de mujeres en campos STEM.];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
+218;G5_06_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya atraído la participación de mujeres en campos STEM.];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-214;G5_07_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya organizado programas de tutoría para mujeres jóvenes (como conocer mujeres ingenieras, etc.)];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
+219;G5_07_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya organizado programas de tutoría para mujeres jóvenes (como conocer mujeres ingenieras, etc.)];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-215;G5_08_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya aplicado acciones afirmativas como contratar a mujeres o minorías de grupos sociales excluidos.];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
+220;G5_08_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya aplicado acciones afirmativas como contratar a mujeres o minorías de grupos sociales excluidos.];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-216;G5_09_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya retenido o empoderado a las mujeres de áreas STEM];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
+221;G5_09_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya retenido o empoderado a las mujeres de áreas STEM];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-217;G5_10_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya apoyado el crecimiento profesional de las mujeres.];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
+222;G5_10_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya apoyado el crecimiento profesional de las mujeres.];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-218;G5_11_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya brindado apoyo financiero a estudiantes mujeres en áreas STEM.];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
+223;G5_11_barriers;En mi experiencia, he sufrido las consecuencias de que en mi organización  [No se haya brindado apoyo financiero a estudiantes mujeres en áreas STEM.];Variables dependientes: barreras enfrentadas;Factor Likert;"1  Strongly disagree
 2  Disagree
 3  Somewhat disagree
 4  Neither agree or disagree
 5  Somewhat agree  
 6  Agree
 7  Strongly agree";
-219;G6_open_data_importance;Considero totalmente útil una plataforma de datos abiertos sobre la desigualdad de género en los campos STEM;Survey;Dicotómica;"1  Si 
+224;G6_open_data_importance;Considero totalmente útil una plataforma de datos abiertos sobre la desigualdad de género en los campos STEM;Survey;Dicotómica;"1  Si 
 0  No";
-220;G7_IT_area;Área;Carrera;Dicotómica;"1  IT 
+225;G7_IT_area;Área;Carrera;Dicotómica;"1  IT 
 0  Otra que no sea  IT";Only for Peru and Brasil 
-221;Problem_case;Problemas identificados en las variables D8_1-4, D9_2_1-4, D12_1. ;Survey;Factor;"0 No Problem
+226;Problem_case;Problemas identificados en las variables D8_1-4, D9_2_1-4, D12_1. ;Survey;Factor;"0 No Problem
 1 Potencial Problem";
