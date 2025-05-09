@@ -153,3 +153,5 @@ Vale ressaltar que todo o processo de codificação e decodificação também fo
 - OHCHR. _UN Free & Equal: a global campaign to promote equal rights for LGBTI people_. **Office of the United Nations High Commissioner for Human Rights**, 2018. Disponível em: <https://www.ohchr.org/en/sexual-orientation-and-gender-identity/un-free-equal-global-campaign-promote-equal-rights-lgbti-people>. Acessado em: 24 abr. 2025.
 
 - UNESCO. _Bringing it Out in the Open: Monitoring school violence based on sexual orientation, gender identity or gender expression in national and international surveys_. **UNESCO**, 2019. Disponível em: <https://unesdoc.unesco.org/ark:/48223/pf0000367493>. Acessado em: 24 abr. 2025.
+
+- INEP. _Censo da Educação Superior: Microdados do Censo da Educação Superior 2023_. **Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira**, 2023. Disponível em: <https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-da-educacao-superior>. Acessado em: 09 maio 2025.
