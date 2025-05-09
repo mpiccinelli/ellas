@@ -32,45 +32,82 @@ Os dados foram coletados por meio de questionários online aplicados no Brasil, 
 
 ```
 ├── ELLAS
-│   ├── Data
-│       └── Ethnic
-│           └── harmonization_ethnic_data.csv
-│       └── Gender
-│           └── normalization_gender_base.csv
-│           └── normalization_gender_data.csv
-│       └── dataset.xlsx
-│       └── dictionary.xlsx
-│       └── harmonization_ethnic_data.csv
-│       └── data_cleaned.csv
-│   ├── Ontology
+│   └── Data
+│       └── Original
+│           └── dataset.csv
+│           └── dictionary.csv
+│       └── Normalization
+│           └── Ethnic
+│               └── harmonization_ethnic_data.csv
+│           └── Gender
+│               └── normalization_gender_base.csv
+│               └── normalization_gender_data.csv
+│               └── data_gender_normalized.csv
+│               └── prompt.md
+│               └── prompt_refine.md
+│               └── Reproduction
+│                   └── Gemini_mapping.csv
+│                   └── GPT_normalization_gender_with_spelling.csv
+│                   └── Prompt_reprodution.md
+│           └── Professional
+│               └── normalization_professional_base.csv
+│               └── normalization_professional_with_translated.csv
+│               └── data_professional_normalized.csv
+│               └── prompt.md
+│           └── Course
+│               └── normalization_course_base.csv
+│               └── normalization_course_with_translated.csv
+│               └── data_course_normalized.csv
+│               └── prompt.md
+│           └── data_cleaned.csv
+│           └── data_cleaned_normalized.csv
+│       └── Dictionaries
+│           └── dictionary_A1_informed_consent.csv
+│           └── dictionary_Country.csv
+│           └── dictionary_course_area.csv
+│           └── dictionary_courses.csv
+│           └── dictionary_D1_1_range.csv
+│           └── dictionary_D2_sex.csv
+│           └── dictionary_D3_gender_classification.csv
+│           └── dictionary_D3_gender.csv
+│           └── dictionary_D4_ethnic_group_especification.csv
+│           └── dictionary_D4_ethnic_group.csv
+│           └── dictionary_D5_state.csv
+│           └── dictionary_D6_city.csv
+│           └── dictionary_D7_marital_status.csv
+│           └── dictionary_D11_O_professional_area_other.csv
+│           └── dictionary_D11_professional_area.csv
+│           └── dictionary_G7_IT_area.csv
+│           └── dictionary_likert.csv
+│           └── dictionary_Problem_case.csv
+│           └── dictionary_si_no.csv
+│       └── Consolidated
+│           └── data_encoded.csv
+│           └── data_decoded.csv
+│           └── dictionary_consolidated.csv
+│   └── Ontology
 │       └── Ellas3.1.owl
-│   ├── Images
+│   └── Images
 │       └── AE (Análise Exploratória)
+│       └── Course (Normalização)
+│       └── Gender (Normalização)
+│       └── Professional (Normalização)
+│       └── LLM (Prompts)
 │   └── Source
 │       └── 1 - Limpeza e tratamento.ipynb
 │       └── 2 - Análise Exploratória.ipynb
+│       └── 3 - Normalização de Gêneros.ipynb
+│       └── 3.1 - Mesclagem de dados.ipynb
+│       └── 3.2 - Reanálise.ipynb
+│       └── 4 - Normalização de Cursos.ipynb
+│       └── 4.1 - Mesclagem de dados.ipynb
+│       └── 4.2 - Reanálise.ipynb
+│       └── 5 - Normalização de Área Profissional.ipynb
+│       └── 5.1 - Mesclagem de dados.ipynb
+│       └── 5.2 - Reanálise.ipynb
 │   └── README.md
+└────── LICENSE
 ```
-
-**Descrição dos Arquivos:**
-
-- `ELLAS/Data`: Contém os dados utilizados na análise.
-  - `Ethnic`: Contém os dados usados para harmonização étnica.
-    - `harmonization_ethnic_data.csv`: Dados de harmonização étnica.
-  - `Gender`: Contém os dados usados para normalização dos gêneros.
-    - `normalization_gender_base.csv`: Dados base para normalização de gênero.
-    - `normalization_gender_data.csv`: Dados de normalização de gênero.
-  - `/dataset.xlsx`: Conjunto de dados da Survey ELLAS.
-  - `/dictionary.xlsx`: Dicionário de dados, com a descrição das variáveis e seus significados.
-  - `data_cleaned.csv`: Conjunto de dados limpo e tratado, pronto para análise.
-- `ELLAS/Ontology`: Contém a ontologia utilizada na análise.
-  - `Ellas3.1.owl`: Ontologia ELLAS, que descreve as classes e propriedades dos dados.
-- `ELLAS/Images`: Contém imagens geradas durante a análise.
-  - `AE (Análise Exploratória)`: Imagens geradas durante a análise exploratória dos dados.
-- `ELLAS/Source`: Contém os códigos e scripts utilizados na análise.
-  - `1 - Limpeza e tratamento.ipynb`: Notebook com o código para limpeza e tratamento dos dados.
-  - `2 - Análise Exploratória.ipynb`: Notebook com o código para a análise exploratória dos dados.
-- `ELLAS/README.md`: Arquivo com a descrição do projeto e da estrutura de arquivos.
 
 ## Metodologia:
 
@@ -80,45 +117,18 @@ Todos os dados foram processados utilizando Python 3.10 e as bibliotecas Pandas,
 pip install panda matplotlib seaborn
 ```
 
-A análise foi dividida em quatro etapas principais: limpeza e tratamento dos dados, e análise exploratória, visualização e análise dos dados. A seguir, apresentamos um resumo de cada etapa:
-
-### Limpeza e Tratamento dos Dados:
-
-Nesta etapa, os dados foram carregados e verificados quanto à presença de valores ausentes, inconsistências e erros. As variáveis foram identificadas com o auxilio do dicionario fornecido para facilitar a leitura e compreensão. Os dados foram normalizados e padronizados, conforme necessário, para garantir a consistência. Além disso, foram aplicadas técnicas de harmonização étnica para garantir a comparabilidade dos dados entre os diferentes países, utilizando o arquivo `harmonization_ethnic_data.csv` como referência. Outra alteração foi a criação de duas novas colunas, uma representando o estado e outra a cidade de residência, a partir das respectivas colunas de cada pais.
+A análise foi dividida em três etapas principais: Análise exploratória, Limpeza e tratamento dos dados, Visualização e Análise dos dados. A seguir, apresentamos um resumo de cada etapa:
 
 ### Análise Exploratória:
 
-Nesta etapa, foram realizadas análises descritivas e estatísticas dos dados, com o objetivo de identificar padrões, tendências e relações entre as variáveis. Foram gerados gráficos e tabelas para facilitar a visualização dos resultados. A visualização dos gráficos nos permitiu identificar problemas de qualidade ds dados, como colunas não normalizadas nas variáveis de gênero, curso superior, pós graduação, mestrado, doutorado e pós doutorado. Além disso, foram identificados outros problemas, como a presença de valores ausentes e alguns outliers em campos como quantidade de filhos, idade e tempo de experiência.
+Nesta etapa, foram realizadas análises descritivas e estatísticas dos dados, com o objetivo de identificar padrões, tendências e relações entre as variáveis. Foram gerados gráficos e tabelas para facilitar a visualização dos resultados. A visualização dos gráficos nos permitiu identificar problemas de qualidade ds dados, como colunas não normalizadas nas variáveis de etnia, gênero, estado, cidade, curso superior, pós graduação, mestrado, doutorado e pós doutorado e na área de formação. Além disso, foram identificados outros problemas, como a presença de valores ausentes e alguns outliers em campos como quantidade de filhos, idade e tempo de experiência.
 
-#### Soluções para os problemas identificados:
-Com base em padrões e definições reconhecidos internacionalmente, adotamos as categorias de gênero e orientação sexual a seguir por estarem fundamentadas em documentos e campanhas oficiais de organismos das Nações Unidas. No relatório *School-related violence and bullying on the basis of Sexual Orientation and Gender Identity or Expression (SOGIE)* (UNESCO, 2018), utiliza-se o conceito SOGIE para englobar orientação sexual, identidade de gênero e expressão de gênero, o que justifica categorias como **Lésbica**, **Gay**, **Bissexual**, **Heterossexual**, **Panssexual**, **Asexsual**, **Queer** e **Interssexual** (UNESCO, 2018). No guia *Safe, Seen and Included* (UNESCO, 2016), reforça-se a necessidade de inclusão de identidades de gênero não conformes, sustentando as categorias **Cisgênero**, **Transgênero** e **Não binario** (UNESCO, 2016). A campanha *UN Free & Equal* do Alto Comissariado das Nações Unidas para os Direitos Humanos destaca a importância de expressões emergentes e aliadas, fundamentando **Outra expressão** e **Prefito não responder** como opções que respeitam a autodeterminação e o direito à não divulgação (OHCHR, 2018). Por fim, o manual técnico *Bringing it Out in the Open* (UNESCO, 2019) recomenda oferecer alternativa de “No informado” para registros em branco ou situações em que a autoidentificação não pôde ser capturada (UNESCO, 2019).
+### Limpeza e Tratamento dos Dados:
 
-A seguir, apresentamos a classificação das categorias finais segundo os componentes SOGIE (UNESCO, 2018):
+Nesta etapa, os dados foram carregados e verificados quanto à presença de valores ausentes, inconsistências e erros. As variáveis foram identificadas com o auxilio do dicionario fornecido para facilitar a leitura e compreensão. Os dados foram normalizados e padronizados, conforme necessário, para garantir a consistência. Além disso, foram aplicadas técnicas de harmonização étnica, normalização de gênero, cursos e áreas profissionais. As normalizações foram realizadas com o auxílio de LLMs (Large Language Models) e todo o processo foi documentado em um arquivo de prompt, que pode ser encontrado na pasta _Prompt_.
+Os dados foram divididos em três partes: dados de gênero, dados de cursos e dados de áreas profissionais. Cada parte foi normalizada separadamente, utilizando os dicionários fornecidos para garantir a consistência e a padronização dos dados. Os dados normalizados foram salvos em arquivos separados para facilitar a análise posterior.
 
-**Identificação de gênero**  
-- **Cisgênero**: pessoa cuja identidade de gênero corresponde ao sexo atribuído no nascimento.  
-- **Transgênero**: pessoa cuja identidade de gênero difere do sexo atribuído ao nascer.  
-- **Não binario**: pessoa que não se identifica exclusivamente como hombre ou mujer.  
-- **Interssexual**: pessoa com variações de características sexuais biológicas (sex characteristics) que não se encaixam nas categorias típicas de “masculino” ou “feminino” (UNESCO, 2018).
-
-**Expressão de gênero**  
-- **Queer**: termo-guarda-chuva para expressões e identidades de gênero não normativas, incluindo pessoas em processo de questionamento.  
-- **Gênero fluido**: pessoa cuja expressão de gênero varia ao longo do tempo, desafiando categorias fixas (UNESCO, 2016).
-
-**Orientação sexual**  
-- **Lésbica**: mulher que sente atração afetiva ou sexual por outras mulheres.  
-- **Gay**: homem que sente atração afetiva ou sexual por outros homens.  
-- **Bissexual**: atração afetiva ou sexual por mais de um gênero.  
-- **Panssexual**: atração independentemente de gênero.  
-- **Assexual**: pouca ou nenhuma atração sexual.  
-- **Heterossexual**: atração por pessoas de gênero diferente.  
-- **Demissexual**: atração sexual que ocorre apenas após formação de vínculo afetivo, integrando categorias complementares de orientação (UNESCO, 2019).
-
-**Outros metadatos**  
-- **Prefiro não responder** e **Não informado**: alternativas de não divulgação ou falha de resposta.  
-- **Outra expressão**: identidades emergentes ou não enquadradas nas categorias acima.
-
-Essa divisão segue integralmente os componentes Sexual Orientation, Gender Identity, Gender Expression e Sex Characteristics definidos pela UNESCO para a análise SOGIE (UNESCO, 2018; UNESCO, 2016).
+### Visualização e Análise dos Dados:
 
 ## Resultados:
 
@@ -134,9 +144,9 @@ Essa divisão segue integralmente os componentes Sexual Orientation, Gender Iden
 
 - Berardi, R., Auceli, P., Maciel, C., Davila, G., Guzman, I., & Mendes, L. ELLAS: Uma plataforma de dados abertos com foco em lideranças femininas em STEM no contexto da América Latina. **In Anais do XVII Women in Information Technology**, (pp. 124-135). Porto Alegre: SBC. doi:10.5753/wit.2023.230764. Disponível em: <https://sol.sbc.org.br/index.php/wit/article/view/25016>. Acessado em: 24 abr. 2025.
 
-- UNESCO. _School-related violence and bullying on the basis of Sexual Orientation and Gender Identity or Expression (SOGIE): a global review of current evidence to inform policy, practice and research_. **UNESCO**, 2018. Disponível em: <https://unesdoc.unesco.org/ark:/48223/pf0000366434>. Acessado em: 24 abr. 2025.  
+- UNESCO. _School-related violence and bullying on the basis of Sexual Orientation and Gender Identity or Expression (SOGIE): a global review of current evidence to inform policy, practice and research_. **UNESCO**, 2018. Disponível em: <https://unesdoc.unesco.org/ark:/48223/pf0000366434>. Acessado em: 24 abr. 2025.
 
-- UNESCO. _Safe, Seen and Included: Inclusion and diversity within educational settings_. **UNESCO**, 2016. Disponível em: <https://unesdoc.unesco.org/ark:/48223/pf0000385417>. Acessado em: 24 abr. 2025.  
+- UNESCO. _Safe, Seen and Included: Inclusion and diversity within educational settings_. **UNESCO**, 2016. Disponível em: <https://unesdoc.unesco.org/ark:/48223/pf0000385417>. Acessado em: 24 abr. 2025.
 
 - OHCHR. _UN Free & Equal: a global campaign to promote equal rights for LGBTI people_. **Office of the United Nations High Commissioner for Human Rights**, 2018. Disponível em: <https://www.ohchr.org/en/sexual-orientation-and-gender-identity/un-free-equal-global-campaign-promote-equal-rights-lgbti-people>. Acessado em: 24 abr. 2025.
 
