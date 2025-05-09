@@ -112,11 +112,8 @@ Os dados foram coletados por meio de questionários online aplicados no Brasil, 
 
 ## Metodologia:
 
-Todos os dados foram processados utilizando Python 3.10 e as bibliotecas Pandas, Matplotlib e Seaborn. Os dados foram analisados utilizando Jupyter Notebook com o ambiente Anaconda. A análise foi realizada em um ambiente virtual com as seguintes bibliotecas instaladas:
-
-```bash
-pip install panda matplotlib seaborn
-```
+Todos os dados foram processados utilizando Python com as bibliotecas Pandas, Matplotlib e Seaborn. Utilizamos também o Jupyter Notebook para facilitar a visualização e análise dos dados. O código foi organizado em diferentes notebooks, cada um focando em uma parte específica do processo de análise. Os notebooks estão organizados na pasta _Source_ do repositório.
+Além disso, utilizamos LLMs (Large Language Models) para auxiliar na normalização dos dados, codificação e decodificação, e na criação dos dicionários.
 
 A análise foi dividida em três etapas principais: Análise exploratória, Limpeza e tratamento dos dados, Visualização e Análise dos dados. A seguir, apresentamos um resumo de cada etapa:
 
