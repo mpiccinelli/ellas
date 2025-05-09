@@ -85,6 +85,7 @@ Os dados foram coletados por meio de questionários online aplicados no Brasil, 
 │           └── data_encoded.csv
 │           └── data_decoded.csv
 │           └── dictionary_consolidated.csv
+│           └── prompt.md
 │   └── Ontology
 │       └── Ellas3.1.owl
 │   └── Images
