@@ -106,6 +106,7 @@ Os dados foram coletados por meio de questionários online aplicados no Brasil, 
 │       └── 5 - Normalização de Área Profissional.ipynb
 │       └── 5.1 - Mesclagem de dados.ipynb
 │       └── 5.2 - Reanálise.ipynb
+│       └── 6 - Análise Exploratória - Pós normalização.ipynb
 │   └── README.md
 └────── LICENSE
 ```
