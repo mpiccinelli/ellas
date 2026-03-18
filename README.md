@@ -1,14 +1,4 @@
-# Curadoria semântica de dados da Survey do projeto ELLAS utilizando LLMs
-
-## Visão Geral
-
-Este repositório documenta um pipeline completo de análise e curadoria semântica de dados da Survey do projeto ELLAS, realizada em países da América Latina.
-
-Os dados originais apresentam características que dificultam sua análise direta, como alta cardinalidade em variáveis categóricas, presença de respostas abertas, inconsistências linguísticas entre idiomas e ausência de padronização semântica. Essas limitações tornam inviável a normalização manual em larga escala, especialmente considerando o tempo restrito do projeto e a necessidade de entrega de resultados consistentes.
-
-Para enfrentar esse cenário, foi adotada uma abordagem estruturada baseada no uso assistido de Modelos de Linguagem de Grande Escala (LLMs), combinada com validação humana e construção de dicionários intermediários, garantindo controle, rastreabilidade e reprodutibilidade do processo.
-
-Como resultado, foi produzido um dataset consolidado, normalizado e semanticamente consistente, alinhado a referências institucionais, pronto para ser unificado a plataforma de dados abertos disponibilizada pelo projeto. Além disso, este trabalho propõe um modelo metodológico para utilização de LLMs no tratamento de dados categóricos complexos, contribuindo para aplicações em ciência de dados e contextos acadêmicos que demandam curadoria semântica.
+# Curadoria semântica de dados da survey do projeto ELLAS utilizando LLMs
 
 **Autores:**
 
@@ -24,17 +14,43 @@ Como resultado, foi produzido um dataset consolidado, normalizado e semanticamen
   - Professora, Doutora, UTFPR
   - nadiap@utfpr.edu.br
 
+## Visão Geral
+
+Este repositório documenta um pipeline completo de análise e curadoria semântica de dados da survey do projeto ELLAS, realizada em diferentes países da América Latina.
+
+Os dados originais apresentam características que dificultam sua análise direta, como alta cardinalidade em variáveis categóricas, presença de respostas abertas, inconsistências linguísticas entre idiomas e ausência de padronização semântica. Essas limitações tornam inviável a normalização manual em larga escala, especialmente considerando o tempo restrito do projeto e a necessidade de entrega de resultados consistentes.
+
+Para enfrentar esse cenário, foi adotada uma abordagem estruturada baseada no uso assistido de Modelos de Linguagem de Grande Escala (LLMs), combinada com validação humana e construção de dicionários intermediários, garantindo controle, rastreabilidade e reprodutibilidade do processo.
+
+Como resultado, foi produzido um dataset consolidado, normalizado e semanticamente consistente, alinhado a referências institucionais, pronto para ser integrado à plataforma de dados abertos disponibilizada pelo projeto. Além disso, este trabalho propõe um modelo metodológico para utilização de LLMs no tratamento de dados categóricos complexos, contribuindo para aplicações em ciência de dados e para o desenvolvimento de abordagens metodológicas em contextos acadêmicos que demandam curadoria semântica.
+
+**Palavras-chave:**  
+Curadoria semântica de dados, Normalização de dados, Modelos de Linguagem de Grande Escala, LLMs, Inteligência Artificial, Dados categóricos, Dados multilíngues, Engenharia de Dados, Ciência de Dados, STEM, Igualdade de Gênero, América Latina, ELLAS.
+
+## Overview
+
+This repository documents a complete pipeline for semantic curation and analysis of survey data from the ELLAS project, conducted across Latin American countries.
+
+The original dataset presents characteristics that hinder direct analysis, such as high cardinality in categorical variables, presence of open-ended responses, multilingual inconsistencies, and lack of semantic standardization. These limitations make large-scale manual normalization impractical, especially considering the project timeline and the need for consistent and reliable results.
+
+To address this scenario, a structured approach was adopted based on the assisted use of Large Language Models (LLMs), combined with human validation and the construction of intermediate dictionaries, ensuring control, traceability, and reproducibility of the process.
+
+As a result, a consolidated, normalized, and semantically consistent dataset was produced, aligned with institutional references and ready for integration into the ELLAS open data platform. Additionally, this work proposes a methodological model for the use of LLMs in handling complex, high-cardinality categorical data, contributing to applications in data science and academic contexts that require semantic curation.
+
+**Keywords:**  
+Semantic data curation, Data normalization, Large Language Models, LLMs, Artificial Intelligence, Categorical data, Multilingual data, Data Engineering, Data Science, STEM, Gender Equality, Latin America, ELLAS.
+
 ---
 
 ## Descrição do Projeto:
 
-O projeto ELLAS (Equality in Leadership for Latin American STEM) visa promover a igualdade de gênero em áreas de Ciência, Tecnologia, Engenharia e Matemática (STEM) na América Latina. Este estudo foca nos dados da Survey realizada a pedido do ELLAS. A partir da análise dos dados, buscamos contribuir para a formulação de estratégias e políticas que promovam a igualdade de gênero e a inclusão de mulheres em áreas de STEM.
+O projeto ELLAS (Equality in Leadership for Latin American STEM) visa promover a igualdade de gênero em áreas de Ciência, Tecnologia, Engenharia e Matemática (STEM) na América Latina. Este estudo foca nos dados da survey realizada a pedido do ELLAS. A partir da análise dos dados, buscamos contribuir para a formulação de estratégias e políticas que promovam a igualdade de gênero e a inclusão de mulheres em áreas de STEM.
 
 **Objetivo do Estudo:**  
-Analisar os dados da Survey para identificar padrões e tendências relacionados à igualdade de gênero em STEM na América Latina, com foco em lideranças femininas. O presente estudo busca complementar os dados da plataforma ELLAS, com quantificações e análises que possam contribuir para a formulação de políticas públicas e estratégias de inclusão.
+Analisar os dados da survey para identificar padrões e tendências relacionados à igualdade de gênero em STEM na América Latina, com foco em lideranças femininas. O presente estudo busca complementar os dados da plataforma ELLAS, com quantificações e análises que possam contribuir para a formulação de políticas públicas e estratégias de inclusão.
 
 **Origem dos Dados:**  
-Os dados foram coletados por meio de questionários online aplicados no Brasil, Peru e Bolivia com o auxílio de empresas especializadas em pesquisa de mercado e instituições acadêmicas. A pesquisa foi realizada entre 2023 e 2024, com o objetivo de entender o perfil, as experiências e desafios enfrentados por mulheres em STEM na América Latina, e complementar os dados disponibilizados na plataforma de dados abertos mantida pelo projeto ELLAS. A pesquisa foi aprovada por comitês de ética e respeitou as diretrizes de consentimento informado e confidencialidade dos participantes. Os dados foram disponibilizados em formato XLSX e CSV, com dicionário de dados e informações sobre a coleta, perfil e objetivos de cada variável.
+Os dados foram coletados por meio de questionários online aplicados no Brasil, Peru e Bolívia com o auxílio de empresas especializadas em pesquisa de mercado e instituições acadêmicas. A pesquisa foi realizada entre 2023 e 2024, com o objetivo de entender o perfil, as experiências e desafios enfrentados por mulheres em STEM na América Latina, e complementar os dados disponibilizados na plataforma de dados abertos mantida pelo projeto ELLAS. A pesquisa foi aprovada por comitês de ética e respeitou as diretrizes de consentimento informado e confidencialidade dos participantes. Os dados foram disponibilizados em formato XLSX e CSV, com dicionário de dados e informações sobre a coleta, perfil e objetivos de cada variável.
 
 ---
 
@@ -131,7 +147,7 @@ Todos os dados foram processados utilizando Python, com apoio do ambiente Jupyte
 
 O estudo foi estruturado a partir de um desafio central: a presença de variáveis categóricas abertas, multilíngues e com alta cardinalidade, o que inviabiliza abordagens tradicionais de normalização manual em larga escala. Esse tipo de tarefa, quando executado exclusivamente por humanos, demanda elevado esforço cognitivo, está sujeito a inconsistências e erros e apresenta baixa escalabilidade.
 
-Diante disso, adotou-se uma estratégia baseada na decomposição do problema em subetapas controladas, com uso assistido de Modelos de Linguagem de Grande Escala (LLMs), atuando como apoio à curadoria semântica dos dados.
+Diante disso, adotou-se uma estratégia baseada na decomposição do problema em subetapas controladas, com uso assistido de Modelos de Linguagem de Grande Escala (LLMs), atuando como suporte à curadoria semântica dos dados, sob supervisão humana.
 
 A metodologia foi organizada em três etapas principais:
 
@@ -273,7 +289,7 @@ O estudo evidencia que a normalização de dados categóricos abertos, especialm
 
 A utilização de LLMs, de forma assistida e controlada, mostrou-se uma abordagem viável, eficiente e reproduzível para esse tipo de problema. O método adotado permitiu estruturar dados complexos, mantendo rastreabilidade e transparência.
 
-Além disso, destaca-se que a IA atua como um mecanismo de apoio ao trabalho humano, reduzindo esforço repetitivo, mitigando erros e ampliando a capacidade de análise, sem substituir a necessidade de supervisão e validação.
+Além disso, destaca-se que a IA atua como um mecanismo de apoio ao trabalho humano, reduzindo esforço repetitivo, mitigando erros e ampliando a capacidade de análise, sem substituir a necessidade de supervisão e validação. Esse equilíbrio entre automação e supervisão humana se mostra essencial para garantir qualidade, confiabilidade e responsabilidade no uso de IA em contextos científicos.
 
 Dessa forma, o estudo demonstra que o uso controlado de LLMs pode atuar como um mecanismo eficiente de apoio à curadoria semântica em datasets complexos.
 
@@ -288,6 +304,7 @@ As principais contribuições deste trabalho incluem:
 - Uso de LLMs com controle, rastreabilidade e documentação completa
 - Aplicação prática em um dataset real, multilíngue e de alta complexidade
 - Preparação dos dados para integração com modelos semânticos
+- Demonstração prática da viabilidade do uso de LLMs em tarefas de curadoria semântica em larga escala
 
 ---
 
