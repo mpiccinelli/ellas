@@ -1,34 +1,36 @@
-# Análise de dados da Survey do projeto ELLAS.
+# Curadoria semântica de dados da Survey do projeto ELLAS utilizando LLMs
 
-Este repositório contém os arquivos e códigos utilizados na análise dos dados da Survey ELLAS.
+Este repositório documenta um pipeline completo de análise e curadoria semântica de dados da Survey do projeto ELLAS, abordando desafios relacionados a dados categóricos abertos, multilíngues e de alta cardinalidade, por meio de uma abordagem estruturada baseada no uso assistido de Modelos de Linguagem de Grande Escala (LLMs).
 
 **Autores:**
 
 - Marlos Vinicius S. Piccinelli
-
   - Mestrando em Computação Aplicada, PPGCA - UTFPR
   - marlosvinicius.info@gmail.com
-
-- Nádia P. Kozievitch
-
-  - Professora, Doutora, UTFPR
-  - nadiap@utfpr.edu.br
 
 - Rita Cristina Galarraga Berardi
   - Professora, Doutora, UTFPR
   - ritaberardi@utfpr.edu.br
 
+- Nádia P. Kozievitch
+  - Professora, Doutora, UTFPR
+  - nadiap@utfpr.edu.br
+
+---
+
 ## Descrição do Projeto:
 
 O projeto ELLAS (Equality in Leadership for Latin American STEM) visa promover a igualdade de gênero em áreas de Ciência, Tecnologia, Engenharia e Matemática (STEM) na América Latina. Este estudo foca nos dados da Survey realizada a pedido do ELLAS. A partir da análise dos dados, buscamos contribuir para a formulação de estratégias e políticas que promovam a igualdade de gênero e a inclusão de mulheres em áreas de STEM.
 
-**Objetivo do Estudo:**
+**Objetivo do Estudo:**  
 Analisar os dados da Survey para identificar padrões e tendências relacionados à igualdade de gênero em STEM na América Latina, com foco em lideranças femininas. O presente estudo busca complementar os dados da plataforma ELLAS, com quantificações e análises que possam contribuir para a formulação de políticas públicas e estratégias de inclusão.
 
-**Origem dos Dados:**
-Os dados foram coletados por meio de questionários online aplicados no Brasil, Peru e Bolivia com o auxílio de empresas especializadas em pesquisa de mercado e instituições acadêmicas. A pesquisa foi realizada entre 2023 e 2024, com o objetivo de entender o perfil, as experiências e desafios enfrentados por mulheres em STEM na América Latina, e complementar os dados disponibilizados na plataforma de dados abertos mentida peo projeto ELLAS. A pesquisa foi aprovada por comitês de ética e respeitou as diretrizes de consentimento informado e confidencialidade dos participantes. Os dados foram disponibilizados em formato xlsx e CSV, com dicionário de dados e informações sobre a coleta, perfil e objetivos de cada variável.
+**Origem dos Dados:**  
+Os dados foram coletados por meio de questionários online aplicados no Brasil, Peru e Bolivia com o auxílio de empresas especializadas em pesquisa de mercado e instituições acadêmicas. A pesquisa foi realizada entre 2023 e 2024, com o objetivo de entender o perfil, as experiências e desafios enfrentados por mulheres em STEM na América Latina, e complementar os dados disponibilizados na plataforma de dados abertos mantida pelo projeto ELLAS. A pesquisa foi aprovada por comitês de ética e respeitou as diretrizes de consentimento informado e confidencialidade dos participantes. Os dados foram disponibilizados em formato XLSX e CSV, com dicionário de dados e informações sobre a coleta, perfil e objetivos de cada variável.
 
-**Estrutura de Arquivos:**
+---
+
+## Estrutura de Arquivos:
 
 ```
 ├── ELLAS
@@ -111,18 +113,41 @@ Os dados foram coletados por meio de questionários online aplicados no Brasil, 
 └────── LICENSE
 ```
 
+A estrutura do repositório reflete o pipeline completo de tratamento dos dados, incluindo dados originais, processos de normalização, geração de dicionários, consolidação e preparação para análises e integração semântica.
+
+---
+
 ## Metodologia:
 
-Todos os dados foram processados utilizando Python com as bibliotecas Pandas, Matplotlib e Seaborn. Utilizamos também o Jupyter Notebook para facilitar a visualização e análise dos dados. O código foi organizado em diferentes notebooks, cada um focando em uma parte específica do processo de análise. Os notebooks estão organizados na pasta _Source_ do repositório.
-Além disso, utilizamos LLMs (Large Language Models) para auxiliar na normalização dos dados, codificação e decodificação, e na criação dos dicionários.
+Todos os dados foram processados utilizando Python, com apoio do ambiente Jupyter Notebook para organização, execução e documentação das análises. Foram utilizadas bibliotecas consolidadas do ecossistema científico de dados, como Pandas, NumPy, Matplotlib e Seaborn.
 
-A análise foi dividida em três etapas principais: Análise exploratória, Limpeza e tratamento dos dados, Visualização e Análise dos dados. A seguir, apresentamos um resumo de cada etapa:
+O estudo foi estruturado a partir de um desafio central: a presença de variáveis categóricas abertas, multilíngues e com alta cardinalidade, o que inviabiliza abordagens tradicionais de normalização manual em larga escala. Esse tipo de tarefa, quando executado exclusivamente por humanos, demanda elevado esforço cognitivo, está sujeito a inconsistências e erros e apresenta baixa escalabilidade.
 
-### Análise Exploratória:
+Diante disso, adotou-se uma estratégia baseada na decomposição do problema em subetapas controladas, com uso assistido de Modelos de Linguagem de Grande Escala (LLMs), atuando como apoio à curadoria semântica dos dados.
 
-Nesta etapa, foram realizadas análises descritivas e estatísticas dos dados, com o objetivo de identificar padrões, tendências e relações entre as variáveis. Foram gerados gráficos e tabelas para facilitar a visualização dos resultados. A visualização dos gráficos nos permitiu identificar problemas de qualidade ds dados, como colunas não normalizadas nas variáveis de etnia, gênero, estado, cidade, curso superior, pós graduação, mestrado, doutorado e pós doutorado e na área de formação. Além disso, foram identificados outros problemas, como a presença de valores ausentes e alguns outliers em campos como quantidade de filhos, idade e tempo de experiência.
+A metodologia foi organizada em três etapas principais:
 
-#### Principais problemas identificados X Possíveis soluções:
+- Análise exploratória
+- Limpeza, tratamento e normalização dos dados
+- Visualização e análise dos dados
+
+A utilização de LLMs ocorreu de forma supervisionada, com prompts estruturados, geração de artefatos intermediários (dicionários) e validação contínua dos resultados. Os processos estão documentados em arquivos internos do repositório, como:
+
+- `Data/Normalization/Gender/prompt.md`
+- `Data/Normalization/Gender/prompt_refine.md`
+- `Data/Normalization/Course/prompt.md`
+- `Data/Normalization/Professional/prompt.md`
+- `Data/Consolidated/prompt.md`
+
+---
+
+## Análise Exploratória:
+
+Nesta etapa, foram realizadas análises descritivas e estatísticas dos dados, com o objetivo de identificar padrões, tendências e relações entre as variáveis. Foram gerados gráficos e tabelas para facilitar a visualização dos resultados.
+
+A visualização dos dados permitiu identificar problemas relevantes de qualidade, como variáveis categóricas não normalizadas, inconsistências linguísticas e alta cardinalidade em campos como gênero, etnia, cidade, estado, cursos e áreas profissionais. Também foram identificados valores ausentes e outliers em variáveis numéricas.
+
+### Principais problemas identificados X Possíveis soluções:
 
 ##### Gênero:
 
@@ -149,20 +174,21 @@ Nesta etapa, foram realizadas análises descritivas e estatísticas dos dados, c
 - A variável de área profissional apresentava mais de 100 categorias diferentes. Além da quantidade excessiva de categorias, a variável também apresentava erros de digitação e formatação, como letras maiúsculas e minúsculas, espaços em branco e caracteres especiais e diferenças de idiomas.
 - A proposta apresentada para solucionar o problema foi a normalização da variável de área profissional, utilizando um dicionário de normalização. O dicionário foi criado com o auxílio de LLMs (Large Language Models).
 
-### Limpeza, Tratamento e Normalização dos Dados
+---
+
+## Limpeza, Tratamento e Normalização dos Dados
 
 Nesta etapa, foram conduzidos procedimentos sistemáticos de limpeza e tratamento dos dados, com o objetivo de assegurar a qualidade e a consistência das informações para as análises subsequentes. As seguintes ações foram realizadas:
 
-#### 1. **Verificação e Preparação Inicial**
+### 1. **Verificação e Preparação Inicial**
 
 - Os dados foram carregados e submetidos a uma verificação rigorosa para identificar valores ausentes, inconsistências e erros.
 - As variáveis foram analisadas com o suporte do dicionário de dados fornecido, o que facilitou a leitura, interpretação e compreensão dos atributos presentes.
 
-#### 2. **Normalização e Padronização dos Dados**
+### 2. **Normalização e Padronização dos Dados**
 
 - Os dados foram normalizados e padronizados conforme a necessidade, garantindo a uniformidade das informações.
 - Foram aplicadas técnicas específicas de:
-
   - **Harmonização Étnica**
   - **Normalização de Gênero**
   - **Normalização de Cursos e Áreas Profissionais**
@@ -170,10 +196,9 @@ Nesta etapa, foram conduzidos procedimentos sistemáticos de limpeza e tratament
 - Essas normalizações foram realizadas com o auxílio de Modelos de Linguagem de Grande Escala (LLMs – _Large Language Models_), proporcionando maior eficiência e precisão no processo.
 - Todo o procedimento foi documentado em arquivos no formato Markdown, disponíveis nas respectivas pastas de cada tipo de normalização.
 
-#### 3. **Divisão e Consolidação dos Dados**
+### 3. **Divisão e Consolidação dos Dados**
 
 - Os dados foram segmentados em três conjuntos principais:
-
   - Dados de Gênero
   - Dados de Cursos
   - Dados de Áreas Profissionais
@@ -182,37 +207,135 @@ Nesta etapa, foram conduzidos procedimentos sistemáticos de limpeza e tratament
 - Após a normalização, os dados foram integrados em um único arquivo consolidado, preservando todas as colunas originais e adicionando as colunas normalizadas correspondentes.
 - O arquivo final resultante foi denominado `data_cleaned_normalized.csv`, contendo todas as informações tratadas e normalizadas.
 
-#### 4. **Codificação e Decodificação dos Dados**
+### 4. **Codificação e Decodificação dos Dados**
 
 - Os dados passaram por processos de codificação e decodificação, também com o auxílio de LLMs, utilizando os dicionários previamente definidos para garantir a consistência e a correta interpretação dos valores.
 - Os arquivos gerados foram:
-
   - `data_encoded.csv`: contém os dados tratados e normalizados, com as colunas devidamente codificadas.
   - `data_decoded.csv`: contém os dados tratados e normalizados, com as colunas decodificadas.
 
-#### 5. **Geração de Dicionário Consolidado**
+### 5. **Geração de Dicionário Consolidado**
 
 - Foi criado um dicionário consolidado intitulado `dictionary_consolidated.csv`, que reúne:
-
   - Todas as colunas presentes no arquivo `data_encoded.csv`.
   - A relação dos nomes das colunas com os respectivos dicionários utilizados no processo de normalização.
 
 - Esse arquivo tem como finalidade facilitar a leitura, interpretação e posterior utilização dos dados.
 
-#### 6. **Documentação dos Processos**
+### 6. **Documentação dos Processos**
 
 - Todo o fluxo de trabalho, incluindo os processos de codificação, decodificação e a criação dos dicionários, foi supervisionado e rigorosamente documentado.
 - A documentação completa, incluindo os prompts utilizados durante a aplicação dos LLMs, encontra-se disponível na pasta `_Consolidated_`.
 
-### Visualização e Análise dos Dados:
+## Visualização e Análise dos Dados:
+
+Após os processos de limpeza e normalização, os dados foram reavaliados por meio de análises exploratórias e visualizações comparativas.
+
+Observou-se uma redução significativa da cardinalidade em variáveis categóricas críticas, como gênero, etnia, cursos e áreas profissionais, permitindo maior consistência analítica. A padronização multilíngue possibilitou a integração de respostas provenientes de diferentes países, eliminando ambiguidades linguísticas.
+
+Os principais artefatos gerados nesta etapa incluem:
+
+- `data_cleaned_normalized.csv`
+- `data_encoded.csv`
+- `data_decoded.csv`
+- `dictionary_consolidated.csv`
+
+Esses arquivos constituem uma base estruturada, consistente e preparada para análises estatísticas e integração com modelos semânticos, como ontologias.
+
+Essa transformação permitiu reduzir a ambiguidade semântica dos dados, tornando viáveis análises comparativas entre países e categorias.
+
+---
 
 ## Resultados:
 
+Os principais resultados obtidos incluem:
+
+- Redução significativa da quantidade de categorias em variáveis abertas
+- Padronização de dados multilíngues em uma estrutura comum
+- Criação de dicionários de normalização para variáveis complexas
+- Geração de datasets estruturados e prontos para análise e integração
+
+A utilização de LLMs permitiu acelerar o processo de normalização, mantendo consistência semântica e viabilizando o tratamento de dados que demandariam alto esforço manual.
+
+---
+
 ## Conclusões:
+
+O estudo evidencia que a normalização de dados categóricos abertos, especialmente em contextos multilíngues, representa um desafio significativo quando realizada exclusivamente por processos manuais.
+
+A utilização de LLMs, de forma assistida e controlada, mostrou-se uma abordagem viável, eficiente e reproduzível para esse tipo de problema. O método adotado permitiu estruturar dados complexos, mantendo rastreabilidade e transparência.
+
+Além disso, destaca-se que a IA atua como um mecanismo de apoio ao trabalho humano, reduzindo esforço repetitivo, mitigando erros e ampliando a capacidade de análise, sem substituir a necessidade de supervisão e validação.
+
+Dessa forma, o estudo demonstra que o uso controlado de LLMs pode atuar como um mecanismo eficiente de apoio à curadoria semântica em datasets complexos.
+
+---
 
 ## Contribuições:
 
+As principais contribuições deste trabalho incluem:
+
+- Proposta de um pipeline estruturado para normalização de dados categóricos com uso de IA
+- Estratégia de decomposição de problemas semânticos complexos em etapas reproduzíveis
+- Uso de LLMs com controle, rastreabilidade e documentação completa
+- Aplicação prática em um dataset real, multilíngue e de alta complexidade
+- Preparação dos dados para integração com modelos semânticos
+
+---
+
 ## Agradecimentos:
+
+Agradecemos ao projeto ELLAS, a Universidade Tecnológica Federal do Paraná e à orientação acadêmica recebida ao longo do desenvolvimento deste trabalho.
+
+---
+
+## Uso de Inteligência Artificial:
+
+Este trabalho utilizou Modelos de Linguagem de Grande Escala (LLMs) como ferramenta de apoio em etapas específicas do processo de tratamento de dados.
+
+Os modelos utilizados foram:
+
+- OpenAI GPT-4 (via interface ChatGPT Plus)
+- Google Gemini 1.5 (via interface Gemini Advanced)
+
+A utilização da IA ocorreu nas seguintes atividades:
+
+- Correção ortográfica de respostas abertas
+- Tradução e padronização multilíngue
+- Agrupamento de sinônimos
+- Classificação semântica de categorias
+- Geração de dicionários de normalização
+- Codificação e decodificação de dados
+- Análise de consistência e validação de resultados
+- Geração de artefatos intermediários (dicionários) para controle e rastreabilidade
+- Documentação dos processos e geração de prompts para reprodução
+- Reanálise dos dados após normalização para avaliação de impacto
+- Geração de visualizações comparativas pré e pós normalização
+
+O uso foi realizado por meio de prompts estruturados, documentados nos arquivos do repositório, garantindo rastreabilidade e reprodutibilidade do processo.
+
+A IA foi utilizada como ferramenta assistiva, sendo todas as saídas analisadas e validadas. Nenhuma decisão final foi tomada exclusivamente por modelos automatizados.
+
+---
+
+## Ferramentas Utilizadas:
+
+- Linguagem: Python
+- Ambiente: Jupyter Notebook
+- Sistema operacional: Windows
+- Controle de versão: GitHub
+
+**Categorias de uso:**
+
+- Processamento de dados: Pandas, NumPy
+- Visualização: Matplotlib, Seaborn
+- Ambiente computacional: Jupyter Notebook
+- Controle de versão: GitHub
+- Inteligência artificial: GPT-4, Gemini 1.5
+
+As bibliotecas utilizadas correspondem a versões estáveis disponíveis no período de execução do estudo (2024–2025).
+
+---
 
 ## Referências:
 
