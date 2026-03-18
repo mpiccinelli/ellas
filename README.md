@@ -309,7 +309,7 @@ Nesse contexto, observa-se que a IA não atua como substituta dos especialistas 
 
 Adicionalmente, o estudo evidencia a importância do planejamento adequado na construção de surveys com objetivos analíticos. A definição de categorias estruturadas para variáveis-chave e a padronização dos instrumentos de coleta entre diferentes contextos podem reduzir significativamente o esforço de pós-processamento e aumentar a qualidade e a comparabilidade dos dados.
 
-Por fim, destaca-se que o uso de LLMs em processos de curadoria semântica representa uma oportunidade promissora para pesquisas que lidam com dados complexos e heterogêneos, desde que acompanhado de supervisão humana, documentação rigorosa e controle metodológico. Essas evidências reforçam a necessidade de abordagens metodológicas que integrem inteligência artificial e supervisão humana como estratégia para lidar com a crescente complexidade dos dados em pesquisas contemporâneas.
+Por fim, destaca-se que o uso de LLMs em processos de curadoria semântica representa uma oportunidade promissora para pesquisas que lidam com dados complexos e heterogêneos, desde que acompanhado de supervisão humana, documentação rigorosa e controle metodológico.
 
 ---
 
