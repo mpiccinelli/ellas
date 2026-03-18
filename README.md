@@ -1,6 +1,14 @@
 # Curadoria semântica de dados da Survey do projeto ELLAS utilizando LLMs
 
-Este repositório documenta um pipeline completo de análise e curadoria semântica de dados da Survey do projeto ELLAS, abordando desafios relacionados a dados categóricos abertos, multilíngues e de alta cardinalidade, por meio de uma abordagem estruturada baseada no uso assistido de Modelos de Linguagem de Grande Escala (LLMs).
+## Visão Geral
+
+Este repositório documenta um pipeline completo de análise e curadoria semântica de dados da Survey do projeto ELLAS, realizada em países da América Latina.
+
+Os dados originais apresentam características que dificultam sua análise direta, como alta cardinalidade em variáveis categóricas, presença de respostas abertas, inconsistências linguísticas entre idiomas e ausência de padronização semântica. Essas limitações tornam inviável a normalização manual em larga escala, especialmente considerando o tempo restrito do projeto e a necessidade de entrega de resultados consistentes.
+
+Para enfrentar esse cenário, foi adotada uma abordagem estruturada baseada no uso assistido de Modelos de Linguagem de Grande Escala (LLMs), combinada com validação humana e construção de dicionários intermediários, garantindo controle, rastreabilidade e reprodutibilidade do processo.
+
+Como resultado, foi produzido um dataset consolidado, normalizado e semanticamente consistente, alinhado a referências institucionais, pronto para ser unificado a plataforma de dados abertos disponibilizada pelo projeto. Além disso, este trabalho propõe um modelo metodológico para utilização de LLMs no tratamento de dados categóricos complexos, contribuindo para aplicações em ciência de dados e contextos acadêmicos que demandam curadoria semântica.
 
 **Autores:**
 
