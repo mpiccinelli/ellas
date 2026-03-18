@@ -279,7 +279,7 @@ Os principais resultados obtidos incluem:
 - Criação de dicionários de normalização para variáveis complexas
 - Geração de datasets estruturados e prontos para análise e integração
 - Validação prática do uso de LLMs como suporte à curadoria semântica de dados categóricos complexos, demonstrando viabilidade, consistência e aplicabilidade em cenários reais
-- Evidência de que a utilização assistida de LLMs permite escalabilidade no tratamento de dados, mantendo controle, rastreabilidade e qualidade dos resultados
+- Evidência de que a utilização assistida de LLMs permite escalabilidade no tratamento de dados, mantendo controle, rastreabilidade e qualidade dos resultados  
 
 A utilização de LLMs permitiu acelerar o processo de normalização, mantendo consistência semântica e viabilizando o tratamento de dados que demandariam alto esforço manual.
 
@@ -309,7 +309,7 @@ Nesse contexto, observa-se que a IA não atua como substituta dos especialistas 
 
 Adicionalmente, o estudo evidencia a importância do planejamento adequado na construção de surveys com objetivos analíticos. A definição de categorias estruturadas para variáveis-chave e a padronização dos instrumentos de coleta entre diferentes contextos podem reduzir significativamente o esforço de pós-processamento e aumentar a qualidade e a comparabilidade dos dados.
 
-Por fim, destaca-se que o uso de LLMs em processos de curadoria semântica representa uma oportunidade promissora para pesquisas que lidam com dados complexos e heterogêneos, desde que acompanhado de supervisão humana, documentação rigorosa e controle metodológico.
+Por fim, destaca-se que o uso de LLMs em processos de curadoria semântica representa uma oportunidade promissora para pesquisas que lidam com dados complexos e heterogêneos, desde que acompanhado de supervisão humana, documentação rigorosa e controle metodológico. Essas evidências reforçam a necessidade de abordagens metodológicas que integrem inteligência artificial e supervisão humana como estratégia para lidar com a crescente complexidade dos dados em pesquisas contemporâneas.
 
 ---
 
@@ -321,14 +321,15 @@ As principais contribuições deste trabalho incluem:
 - Estratégia de decomposição de problemas semânticos complexos em etapas reproduzíveis
 - Uso de LLMs com controle, rastreabilidade e documentação completa
 - Aplicação prática em um dataset real, multilíngue e de alta complexidade
-- Preparação dos dados para integração com modelos semânticos
-- Demonstração prática da viabilidade do uso de LLMs em tarefas de curadoria semântica em larga escala
+- Preparação dos dados para integração com modelos semânticos e análises avançadas
+- Formalização de uma abordagem metodológica para uso de LLMs na curadoria semântica de dados categóricos complexos
+- Proposição de um modelo de trabalho híbrido entre IA e especialistas, no qual a IA atua na execução e os especialistas na validação e interpretação dos resultados
 
 ---
 
 ## Agradecimentos:
 
-Agradecemos ao projeto ELLAS, a Universidade Tecnológica Federal do Paraná e à orientação acadêmica recebida ao longo do desenvolvimento deste trabalho.
+Agradecemos ao projeto ELLAS, ao Programa de Pós Graduação em Computação Aplicada da Universidade Tecnológica Federal do Paraná e à orientação acadêmica recebida ao longo do desenvolvimento deste trabalho.
 
 ---
 
