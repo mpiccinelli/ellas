@@ -147,7 +147,7 @@ Todos os dados foram processados utilizando Python, com apoio do ambiente Jupyte
 
 O estudo foi estruturado a partir de um desafio central: a presença de variáveis categóricas abertas, multilíngues e com alta cardinalidade, o que inviabiliza abordagens tradicionais de normalização manual em larga escala. Esse tipo de tarefa, quando executado exclusivamente por humanos, demanda elevado esforço cognitivo, está sujeito a inconsistências e erros e apresenta baixa escalabilidade.
 
-Diante disso, adotou-se uma estratégia baseada na decomposição do problema em subetapas controladas, com uso assistido de Modelos de Linguagem de Grande Escala (LLMs), atuando como suporte à curadoria semântica dos dados, sob supervisão humana.
+Diante disso, adotou-se uma estratégia baseada na decomposição do problema em subetapas controladas, com uso assistido de LLMs, atuando como suporte à curadoria semântica dos dados, sob supervisão humana.
 
 A metodologia foi organizada em três etapas principais:
 
@@ -217,7 +217,7 @@ Nesta etapa, foram conduzidos procedimentos sistemáticos de limpeza e tratament
   - **Normalização de Gênero**
   - **Normalização de Cursos e Áreas Profissionais**
 
-- Essas normalizações foram realizadas com o auxílio de Modelos de Linguagem de Grande Escala (LLMs – _Large Language Models_), proporcionando maior eficiência e precisão no processo.
+- Essas normalizações foram realizadas com o auxílio de LLMs, proporcionando maior eficiência e precisão no processo.
 - Todo o procedimento foi documentado em arquivos no formato Markdown, disponíveis nas respectivas pastas de cada tipo de normalização.
 
 ### 3. **Divisão e Consolidação dos Dados**
@@ -317,7 +317,7 @@ O desenvolvimento deste estudo evidenciou desafios relevantes associados ao trat
 
 Em um cenário exclusivamente manual, a normalização desses dados demandaria a atuação de múltiplos especialistas de domínio, incluindo áreas como sociologia, antropologia, entre outras. Além do elevado custo operacional, esse processo estaria sujeito a inconsistências, variações interpretativas e limitações de escala.
 
-A utilização de Modelos de Linguagem de Grande Escala (LLMs), de forma assistida e supervisionada, mostrou-se uma alternativa viável para apoiar esse processo. Os modelos permitiram acelerar tarefas de padronização, agrupamento semântico e tradução, mantendo consistência e possibilitando a construção de artefatos intermediários para controle e rastreabilidade.
+A utilização de LLMs, de forma assistida e supervisionada, mostrou-se uma alternativa viável para apoiar esse processo. Os modelos permitiram acelerar tarefas de padronização, agrupamento semântico e tradução, mantendo consistência e possibilitando a construção de artefatos intermediários para controle e rastreabilidade.
 
 Nesse contexto, observa-se que a IA não atua como substituta dos especialistas de domínio, mas como um mecanismo de ampliação de capacidade, reduzindo a necessidade de envolvimento direto em tarefas operacionais repetitivas e permitindo que esses especialistas atuem de forma mais estratégica, na validação e interpretação dos resultados.
 
