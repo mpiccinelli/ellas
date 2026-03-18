@@ -278,6 +278,8 @@ Os principais resultados obtidos incluem:
 - Padronização de dados multilíngues em uma estrutura comum
 - Criação de dicionários de normalização para variáveis complexas
 - Geração de datasets estruturados e prontos para análise e integração
+- Validação prática do uso de LLMs como suporte à curadoria semântica de dados categóricos complexos, demonstrando viabilidade, consistência e aplicabilidade em cenários reais
+- Evidência de que a utilização assistida de LLMs permite escalabilidade no tratamento de dados, mantendo controle, rastreabilidade e qualidade dos resultados
 
 A utilização de LLMs permitiu acelerar o processo de normalização, mantendo consistência semântica e viabilizando o tratamento de dados que demandariam alto esforço manual.
 
@@ -292,6 +294,22 @@ A utilização de LLMs, de forma assistida e controlada, mostrou-se uma abordage
 Além disso, destaca-se que a IA atua como um mecanismo de apoio ao trabalho humano, reduzindo esforço repetitivo, mitigando erros e ampliando a capacidade de análise, sem substituir a necessidade de supervisão e validação. Esse equilíbrio entre automação e supervisão humana se mostra essencial para garantir qualidade, confiabilidade e responsabilidade no uso de IA em contextos científicos.
 
 Dessa forma, o estudo demonstra que o uso controlado de LLMs pode atuar como um mecanismo eficiente de apoio à curadoria semântica em datasets complexos.
+
+---
+
+## Considerações
+
+O desenvolvimento deste estudo evidenciou desafios relevantes associados ao tratamento de dados categóricos complexos, especialmente em contextos multilíngues e multiculturais. A presença de variáveis abertas em campos centrais para análise, como gênero, aliada à ausência de padronização entre instrumentos de coleta aplicados em diferentes países, aumentou significativamente a complexidade do processo de curadoria.
+
+Em um cenário exclusivamente manual, a normalização desses dados demandaria a atuação de múltiplos especialistas de domínio, incluindo áreas como sociologia, antropologia, entre outras. Além do elevado custo operacional, esse processo estaria sujeito a inconsistências, variações interpretativas e limitações de escala.
+
+A utilização de Modelos de Linguagem de Grande Escala (LLMs), de forma assistida e supervisionada, mostrou-se uma alternativa viável para apoiar esse processo. Os modelos permitiram acelerar tarefas de padronização, agrupamento semântico e tradução, mantendo consistência e possibilitando a construção de artefatos intermediários para controle e rastreabilidade.
+
+Nesse contexto, observa-se que a IA não atua como substituta dos especialistas de domínio, mas como um mecanismo de ampliação de capacidade, reduzindo a necessidade de envolvimento direto em tarefas operacionais repetitivas e permitindo que esses especialistas atuem de forma mais estratégica, na validação e interpretação dos resultados.
+
+Adicionalmente, o estudo evidencia a importância do planejamento adequado na construção de surveys com objetivos analíticos. A definição de categorias estruturadas para variáveis-chave e a padronização dos instrumentos de coleta entre diferentes contextos podem reduzir significativamente o esforço de pós-processamento e aumentar a qualidade e a comparabilidade dos dados.
+
+Por fim, destaca-se que o uso de LLMs em processos de curadoria semântica representa uma oportunidade promissora para pesquisas que lidam com dados complexos e heterogêneos, desde que acompanhado de supervisão humana, documentação rigorosa e controle metodológico.
 
 ---
 
