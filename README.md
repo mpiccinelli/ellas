@@ -279,7 +279,7 @@ Os principais resultados obtidos incluem:
 - Criação de dicionários de normalização para variáveis complexas
 - Geração de datasets estruturados e prontos para análise e integração
 - Validação prática do uso de LLMs como suporte à curadoria semântica de dados categóricos complexos, demonstrando viabilidade, consistência e aplicabilidade em cenários reais
-- Evidência de que a utilização assistida de LLMs permite escalabilidade no tratamento de dados, mantendo controle, rastreabilidade e qualidade dos resultados  
+- Evidência de que a utilização assistida de LLMs permite escalabilidade no tratamento de dados, mantendo controle, rastreabilidade e qualidade dos resultados
 
 A utilização de LLMs permitiu acelerar o processo de normalização, mantendo consistência semântica e viabilizando o tratamento de dados que demandariam alto esforço manual.
 
@@ -297,6 +297,20 @@ Dessa forma, o estudo demonstra que o uso controlado de LLMs pode atuar como um 
 
 ---
 
+## Contribuições:
+
+As principais contribuições deste trabalho incluem:
+
+- Proposta de um pipeline estruturado para normalização de dados categóricos com uso de IA
+- Estratégia de decomposição de problemas semânticos complexos em etapas reproduzíveis
+- Uso de LLMs com controle, rastreabilidade e documentação completa
+- Aplicação prática em um dataset real, multilíngue e de alta complexidade
+- Preparação dos dados para integração com modelos semânticos e análises avançadas
+- Formalização de uma abordagem metodológica para uso de LLMs na curadoria semântica de dados categóricos complexos
+- Proposição de um modelo de trabalho híbrido entre IA e especialistas, no qual a IA atua na execução e os especialistas na validação e interpretação dos resultados
+
+---
+
 ## Considerações
 
 O desenvolvimento deste estudo evidenciou desafios relevantes associados ao tratamento de dados categóricos complexos, especialmente em contextos multilíngues e multiculturais. A presença de variáveis abertas em campos centrais para análise, como gênero, aliada à ausência de padronização entre instrumentos de coleta aplicados em diferentes países, aumentou significativamente a complexidade do processo de curadoria.
@@ -310,20 +324,6 @@ Nesse contexto, observa-se que a IA não atua como substituta dos especialistas 
 Adicionalmente, o estudo evidencia a importância do planejamento adequado na construção de surveys com objetivos analíticos. A definição de categorias estruturadas para variáveis-chave e a padronização dos instrumentos de coleta entre diferentes contextos podem reduzir significativamente o esforço de pós-processamento e aumentar a qualidade e a comparabilidade dos dados.
 
 Por fim, destaca-se que o uso de LLMs em processos de curadoria semântica representa uma oportunidade promissora para pesquisas que lidam com dados complexos e heterogêneos, desde que acompanhado de supervisão humana, documentação rigorosa e controle metodológico.
-
----
-
-## Contribuições:
-
-As principais contribuições deste trabalho incluem:
-
-- Proposta de um pipeline estruturado para normalização de dados categóricos com uso de IA
-- Estratégia de decomposição de problemas semânticos complexos em etapas reproduzíveis
-- Uso de LLMs com controle, rastreabilidade e documentação completa
-- Aplicação prática em um dataset real, multilíngue e de alta complexidade
-- Preparação dos dados para integração com modelos semânticos e análises avançadas
-- Formalização de uma abordagem metodológica para uso de LLMs na curadoria semântica de dados categóricos complexos
-- Proposição de um modelo de trabalho híbrido entre IA e especialistas, no qual a IA atua na execução e os especialistas na validação e interpretação dos resultados
 
 ---
 
